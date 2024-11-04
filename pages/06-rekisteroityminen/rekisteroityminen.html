@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rekisteröidy</title>
+</head>
+<body>
+
+    <h1>Kalevala Kino</h1>
+
+    <nav class="navbar">
+       <ul>
+        <li><a href="">Etusivu</a></li>
+        <li><a href="">Elokuvat</a></li>
+        <li><a href="">Elokuvawiki</a></li>
+        <li><a href="elokuvakerho.html">Elokuvakerho</a></li>
+        <li><a href="">Tietoa meistä</a></li> 
+        <li><a href="">Haku</a></li>
+        <li><a href="rekisteröityminen.html">Kirjaudu</a></li>
+
+       </ul>
+
+    </nav>
+
+    <main>
+
+        <form action="action_page.php">
+            <div class="form-container">
+              <h1>Rekisteröidy käyttäjäksi</h1>
+              <p>Ole hyvä ja täytä alla olevat tiedot.</p>
+              <hr>
+
+              
+
+              <label for="etunimi"><b>Etunimi</b></label>
+              <input type="text" placeholder="Anna etunimi" name="etunimi" id="etunimi" required>
+
+              <label for="sukunimi"><b>Sukunimi</b></label>
+              <input type="text" placeholder="Anna sukunimi" name="sukunimi" id="sukunimi" required>
+          
+              <label for="email"><b>Sähköposti</b></label>
+              <input type="text" placeholder="Anna sähköposti" name="email" id="email" required>
+          
+              <label for="psw"><b>Salasana</b></label>
+              <input type="password" placeholder="Syötä salasana" name="psw" id="psw" required>
+          
+              <label for="psw-repeat"><b>Syötä salasana uudelleen</b></label>
+              <input type="password" placeholder="Salasana uudelleen" name="psw-repeat" id="psw-repeat" required>
+              <hr>
+          
+              <p>Rekisteröitymällä käyttäjäksi annat luvan <a href="#">kerätä tietojasi ja suostua orjaksi</a>.</p>
+              <button type="submit" class="registerbtn">Rekisteröidy</button>
+            </div>
+          
+            <div class="container signin">
+              <p>Oletko jo käyttäjä? <a href="#">Kirjaudu sisään</a>.</p>
+            </div>
+          </form>
+    </main>
+
+
+
+
+      <!-- Footer alkaa tästä -->
+      <footer class="footer">
+        <p>&copy; 2024 Kalevala Kino. Kaikki oikeudet pidätetään.</p>
+    </footer>
+    
+    
+</body>
+</html>
