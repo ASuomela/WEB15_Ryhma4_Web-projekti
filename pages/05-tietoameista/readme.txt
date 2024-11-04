@@ -1,1 +1,1 @@
-Tähän yleistä tietoa omasta sivusta
+Tähän yleistä tietoa omasta Tietoameista sivusta
