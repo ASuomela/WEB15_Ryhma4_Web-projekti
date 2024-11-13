@@ -2,20 +2,37 @@
 
 /* Otetaan engravers-old-english -fontti käyttöön */
 @font-face {
-    src:url(/resources/fonts/EngraversOldEnglish.ttf);
-    font-family: "EngraversOldEnglish", serif;
+    src: url(/resources/fonts/OPTIEngraversOldEnglish.otf);
+    font-family: "OPTIEngraversOldEnglish";
 }
 
-/* Luodaan flexbox-wrap headerille */
+/* Luodaan flexbox headerille */
 .main-header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #14162e;
+    padding: 10px;
+}
+
+/* Headerin containerien järjestely Flexin avulla */
+
+.otsikko1 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 /* Otsikko tai logo side-navin jälkeen ja ennen top-navia */
 .otsikko1 a {
-    font-family: "EngraversOldEnglish";
+    font-family: "OPTIEngraversOldEnglish";
     text-decoration: none;
     color: #ffde9c;
 }
@@ -30,9 +47,9 @@ body {
 .dropbtn {
     background-color: #14162e;
     color: #ffde9c;
-    padding: 16px;
     font-size: 20px;
     border: none;
+    padding: 5px;
 }
 
 /* Side-navin positio */
@@ -44,18 +61,22 @@ body {
 .side-nav-content {
     display: none;
     position: absolute;
+    top: 100%;
+    left: 0;
     background-color: #426754;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    padding: 5px;
 }
 
 /* Drop-downin linkkien muotoilu */
 .side-nav-content a {
     color: #ffde9c;
-    padding: 12px 16px;
     text-decoration: none;
     font-size: 20px;
+    display: block;
+    margin-bottom: 10px;
 }
 
 /* Side-navin linkkien väri vaihtuu hoveratessa */
