@@ -8,6 +8,8 @@
 
 /* Luodaan flexbox-wrap headerille */
 .main-header {
+    display: flex;
+    justify-content: space-between;
     background-color: #14162e;
 }
 
