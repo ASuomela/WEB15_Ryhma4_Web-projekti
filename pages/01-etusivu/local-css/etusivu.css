@@ -6,7 +6,26 @@
     font-family: "OPTIEngraversOldEnglish";
 }
 
-/* Luodaan flexbox headerille */
+/* Headerin ikonit ja logot */
+.menu-icon {
+    background: url(/resources/images/menu-icon-gold.png) no-repeat center center;
+    background-size: contain;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    flex: 1;
+}
+.logo-header {
+    background: url(/resources/images/LOGO-Kalevala-Engrave-modified.png) no-repeat center center;
+    background-size: contain;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    flex: 1;
+    margin-left: 20px;
+}
+
+/* Luodaan flexboxit headerille */
 .main-header {
     display: flex;
     justify-content: space-between;
@@ -14,29 +33,32 @@
     background-color: #14162e;
     padding: 10px;
 }
-
-/* Headerin containerien järjestely Flexin avulla */
-
 .otsikko1 {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 20px;
 }
 .top-nav {
     flex: 1;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 }
+/* Siirretään "Rekisteröityminen" oikealle */
+.top-nav-right {
+    margin-left: 500px;
+}
 
-/* Otsikko tai logo side-navin jälkeen ja ennen top-navia */
+/* Logo/otsikko side-navin jälkeen ja ennen top-navia */
 .otsikko1 a {
     font-family: "OPTIEngraversOldEnglish";
     text-decoration: none;
     color: #ffde9c;
 }
 
+/* Bodyn muotoilut */
 body {
     background-color: #282B59;
     margin: 0px;
@@ -57,7 +79,7 @@ body {
     position: relative;
 }
 
-/* Side-navin sisältö (piilotettu default) */
+/* Side-navin muotoilut (piilotettu default) */
 .side-nav-content {
     display: none;
     position: absolute;
@@ -70,7 +92,7 @@ body {
     padding: 5px;
 }
 
-/* Drop-downin linkkien muotoilu */
+/* Side-navin sisällön muotoilu */
 .side-nav-content a {
     color: #ffde9c;
     text-decoration: none;
@@ -89,17 +111,19 @@ body {
 .side-nav:hover .dropbtn {background-color: #847f56;}
 
 /* Top navin muotoilut */
-.top-nav > div:nth-child(6) {
-    margin-left: auto
-}
 .top-nav a {
     color:#ffde9c;
+    font-weight: bold;
     padding: 20px;
     text-decoration: none;
     font-size: 20px;
 }
+@media (max-width: 1500px) {
+    .top-nav {
+        display: none;
+    }
+}
 .top-nav a:hover {color: whitesmoke;}
-.top-nav:hover {color: #426754;}
 
 /* Footerin muotoilut */
 footer {
@@ -107,6 +131,7 @@ footer {
     color: #ffde9c;
     position: fixed;
     width: 100%;
-    height: 100px;
+    height: 120px;
     bottom: 0;
+    background-color: #14162e;
 }
