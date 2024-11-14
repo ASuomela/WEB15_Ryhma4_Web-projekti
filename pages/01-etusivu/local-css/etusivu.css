@@ -85,10 +85,11 @@
     top: 100%;
     left: 0;
     background-color: #14162e;
-    min-width: 160px;
+    min-width: 140px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    padding: 5px;
+    border: 1px solid #ffde9c;
+    border-radius: 5px;
 }
 
 /* Side-navin sisällön muotoilu */
@@ -98,11 +99,15 @@
     text-decoration: none;
     font-size: 20px;
     display: block;
-    margin-bottom: 10px;
+    padding: 20px;
 }
 
 /* Side-navin linkkien väri vaihtuu hoveratessa */
-.side-nav-content a:hover {background-color:#426754;}
+.side-nav-content a:hover {
+    background-color:#426754;
+    border: 1px solid #ffde9c;
+    border-radius: 5px;
+}
 
 /* Side-nav menu näkyy hoveratessa */
 .side-nav:hover .side-nav-content {display: block;}
@@ -114,16 +119,27 @@
 .top-nav a {
     font-family: 'Roboto', sans-serif;
     color:#ffde9c;
-    padding: 20px;
+    padding: 40px;
     text-decoration: none;
     font-size: 20px;
 }
+/* Piilottaa nav barin kun näytön koko < 600px */
 @media (max-width: 600px) {
     .top-nav {
         display: none;
     }
 }
-.top-nav a:hover {background-color: #426754;}
+.top-nav a:hover {
+    background-color: #426754;
+    border: 2px solid #ffde9c;
+    border-radius: 5px;
+}
+
+.top-nav a.active {
+    background-color: #282B59;
+    border: 2px solid #ffde9c;
+    border-radius: 5px;
+}
 
 .searchbar {
     background-color:#426754;
@@ -178,7 +194,6 @@ body {
     font-size: small;
     padding-bottom: 10%;
 }
-
 
 /* Footerin muotoilut */
 footer {
