@@ -5,6 +5,8 @@
     src: url(/resources/fonts/OPTIEngraversOldEnglish.otf);
     font-family: "OPTIEngraversOldEnglish";
 }
+/* Tuodaan Google Fonts: Roboto */
+
 
 /* Headerin ikonit ja logot */
 .menu-icon {
@@ -15,13 +17,14 @@
     display: flex;
     flex: 1;
 }
-.logo-header {
+.container-logo-header {
     background: url(/resources/images/LOGO-Kalevala-Engrave-modified.png) no-repeat center center;
     background-size: contain;
     height: 100px;
     width: 100px;
     display: flex;
-    flex: 1;
+    justify-content: flex-start;
+    margin-right: auto;
     margin-left: 20px;
 }
 
@@ -31,7 +34,9 @@
     justify-content: space-between;
     align-items: center;
     background-color: #14162e;
-    padding: 10px;
+    padding: 5px;
+    position: sticky;
+    top: 0;
 }
 .otsikko1 {
     flex: 1;
@@ -43,23 +48,29 @@
 .top-nav {
     flex: 1;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content:flex-start;
+    align-items: flex-start;
+    margin-left: 20px;
+    position: sticky;
 }
 /* Siirretään "Rekisteröityminen" oikealle */
 .top-nav-right {
-    margin-left: 500px;
+    margin-left: auto;
 }
 
 /* Logo/otsikko side-navin jälkeen ja ennen top-navia */
 .otsikko1 a {
-    font-family: "OPTIEngraversOldEnglish";
+    font-family: "OPTIEngraversOldEnglish", sans-serif;
     text-decoration: none;
     color: #ffde9c;
 }
 
 /* Bodyn muotoilut */
 body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     background-color: #282B59;
     margin: 0px;
     padding: 0px;
@@ -94,6 +105,7 @@ body {
 
 /* Side-navin sisällön muotoilu */
 .side-nav-content a {
+    font-family: 'Roboto', sans-serif;
     color: #ffde9c;
     text-decoration: none;
     font-size: 20px;
@@ -112,13 +124,13 @@ body {
 
 /* Top navin muotoilut */
 .top-nav a {
+    font-family: 'Roboto', sans-serif;
     color:#ffde9c;
-    font-weight: bold;
     padding: 20px;
     text-decoration: none;
     font-size: 20px;
 }
-@media (max-width: 1500px) {
+@media (max-width: 550px) {
     .top-nav {
         display: none;
     }
@@ -127,11 +139,16 @@ body {
 
 /* Footerin muotoilut */
 footer {
+
     text-align: center;
+    margin-top: auto;
     color: #ffde9c;
-    position: fixed;
     width: 100%;
-    height: 120px;
+    height: 80px;
     bottom: 0;
     background-color: #14162e;
+}
+
+p {
+
 }
