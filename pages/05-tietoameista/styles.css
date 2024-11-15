@@ -1,0 +1,123 @@
+/* Header ja navigointityylit */
+header {
+    background-color: #282B59;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+body {
+    font-family: 'Roboto', sans-serif; /* Google-fontti */
+    margin: 0;
+    padding: 0;
+    font-size: large;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo img {
+    height: 150px; /* Aseta logon koko */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+    font-size: x-large;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Teatterin nimi */
+#teatteri-nimi {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#teatteri-nimi h1 {
+    font-size: 7em;
+    color: #333;  
+}
+/* Yleiset tyylit */
+#teatteri-nimi h1 {
+    font-family: "Pirata One", system-ui; /* Google-fontti */
+    margin: 0;
+    padding: 0;
+}
+  
+
+
+/* Tietoa meistä ja kartta -osio */
+#tietoa-meista {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 20px;
+}
+
+.info, .map {
+    width: 45%;
+}
+
+.map iframe {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Banneri still-kuville */
+#banner {
+    padding: 10px;
+    background-color: #f3f3f3;
+    text-align: center;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    gap: 20px;
+    justify-content: center;
+}
+
+.carousel img {
+    width: 500px;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.carousel img:hover {
+    transform: scale(1.05);
+}
+
+/* Rekisteröinti */
+.col-md-5 {
+    position: center;
+    margin-left: 15%;
+    margin-top: 5%;
+    background-color: #aeb1da;
+  }
+
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
