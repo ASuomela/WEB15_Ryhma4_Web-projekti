@@ -127,6 +127,17 @@
     border: 2px solid #ffde9c;
 }
 
+/* Bodyn muotoilut */
+body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #282B59;
+    margin: 0px;
+    padding: 0px;
+}
+
 /* Footerin muotoilut */
 footer {
     text-align: center;
