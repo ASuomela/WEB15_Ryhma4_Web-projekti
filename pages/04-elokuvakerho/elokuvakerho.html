@@ -3,26 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/pages/04-elokuvakerho/style.css">
+    <link rel="stylesheet" href="/pages/04-elokuvakerho/elokuvakerho.css">
+    <link rel="stylesheet" href="/resources/css/styles.css">
     <title>Elokuvakerho</title>
 </head>
 <body>
     
-    <h1>Kalevala Kino</h1>
+    <header class="main-header">
 
-    <nav class="navbar">
-       <ul>
-        <li><a href="/pages/01-etusivu/etusivu.html">Etusivu</a></li>
-        <li><a href="/pages/02-elokuvat/varaus.html">Elokuvat</a></li>
-        <li><a href="">Elokuvawiki</a></li>
-        <li><a href="/pages/04-elokuvakerho/elokuvakerho.html">Elokuvakerho</a></li>
-        <li><a href="/pages/05-tietoameista/tietoameista.html">Tietoa meistä</a></li> 
-        <li><a href="">Haku</a></li>
-        <li><a href="/pages/06-rekisteroityminen/rekisteroityminen.html">Kirjaudu</a></li>
-
-       </ul>
-
-    </nav>
+        <!--Side-navi-->
+                <nav class="side-nav">
+                    <button class="dropbtn"><i class="menu-icon"></i></button>
+                    <div class="side-nav-content">
+                        <a href="/pages/01-etusivu/etusivu.html">Etusivu</a>
+                        <a href="/pages/02-elokuvat/varaus.html">Elokuvat</a>
+                        <a href="/pages/03-elokuvawiki/elokuvawiki.html">Elokuvawiki</a>
+                        <a href="/pages/04-elokuvakerho/elokuvakerho.html">Elokuvakerho</a>
+                        <a href="/pages/05-tietoameista/tietoameista.html">Tietoa meistä</a>
+                        <a href="/pages/06-rekisteroityminen/rekisteroityminen.html">Rekisteröidy</a>
+                    </div>
+                </nav>
+        
+        <!--Logo ja otsikko-->
+                    <a href="/pages/01-etusivu/etusivu.html">
+                        <div class="container-logo-header">
+                            <i class="logo-header"></i>
+                        </div>
+                    </a>
+                
+        <!--Top-navi-->
+                    <nav class="top-nav">
+                     <div class="top-nav-left">
+                        <a href="/pages/01-etusivu/etusivu.html" class="active">Etusivu</a>
+                        <a href="/pages/02-elokuvat/varaus.html">Elokuvat</a>
+                        <a href="/pages/03-elokuvawiki/elokuvawiki.html">Elokuvawiki</a>
+                        <a href="/pages/04-elokuvakerho/elokuvakerho.html">Elokuvakerho</a>
+                        <a href="/pages/05-tietoameista/tietoameista.html">Tietoa meistä</a>
+                     </div>
+                     <div class="top-nav-right">
+                        <input class="searchbar" type="text" placeholder="Haku sivulta..">
+                        <a href="/pages/06-rekisteroityminen/rekisteroityminen.html">Rekisteröidy</a>
+                    </div>
+                    </nav>
+            </header>
 
     <main>
       <h3>Elokuvakerho
@@ -79,9 +102,10 @@
 </main>
 
     <!-- Footer alkaa tästä -->
-    <footer class="footer">
-        <p>&copy; 2024 Kalevala Kino. Kaikki oikeudet pidätetään.</p>
+    <footer>
+        <p>&copy; 2024 Kalevala Kino. All rights reserved.</p>
     </footer>
+
     
     
 </body>
