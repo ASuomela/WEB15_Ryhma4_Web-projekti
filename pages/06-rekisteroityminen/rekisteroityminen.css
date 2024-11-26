@@ -5,9 +5,13 @@ main {
     margin-right: 20px;
 }
 
+h1, p, b {
+  color: #ffde9c;
+}
 
 
 /* Rekisteröitymislomake */
+
 
 /* Add padding to containers */
 .form-container {

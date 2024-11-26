@@ -5,6 +5,14 @@ main {
     margin-right: 20px;
 }
 
+p {
+    color: #ffde9c;
+}
+
+h3 {
+    color: #ffde9c;
+}
+
 /* kerhon kuvia yms */
 .container {
     padding: 2rem;
@@ -60,8 +68,8 @@ main {
 
 /* Elokuvaraati-osion tyylit */
 .elokuvaraati {
-    background-color: #333;
-    color: #fff;
+    background-color: #14162e;
+    color: #ffde9c;
     padding: 40px 20px;
     text-align: center;
 }
@@ -93,7 +101,7 @@ main {
 
 .raati-jasen p {
     font-size: 14px;
-    color: #ccc;
+    color: #ffde9c;
 }
 
 
