@@ -1,46 +1,6 @@
-/* Header ja navigointityylit */
-header {
-    background-color: #282B59;
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-body {
-    font-family: 'Roboto', sans-serif; /* Google-fontti */
-    margin: 0;
-    padding: 0;
-    font-size: large;
-}
 
-nav {
-    display: flex;
-    align-items: center;
-}
 
-nav .logo img {
-    height: 150px; /* Aseta logon koko */
-}
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    transition: background-color 0.3s;
-    font-size: x-large;
-}
-
-nav ul li a:hover {
-    background-color: #555;
-}
 
 /* Teatterin nimi */
 #teatteri-nimi {
@@ -50,7 +10,8 @@ nav ul li a:hover {
 
 #teatteri-nimi h1 {
     font-size: 7em;
-    color: #333;  
+    color: #ffde9c;  
+
 }
 /* Yleiset tyylit */
 #teatteri-nimi h1 {
@@ -58,8 +19,6 @@ nav ul li a:hover {
     margin: 0;
     padding: 0;
 }
-  
-
 
 /* Tietoa meistä ja kartta -osio */
 #tietoa-meista {
@@ -67,6 +26,7 @@ nav ul li a:hover {
     justify-content: space-around;
     padding: 20px;
     gap: 20px;
+    color: #ffde9c;  
 }
 
 .info, .map {
@@ -83,6 +43,7 @@ nav ul li a:hover {
     padding: 10px;
     background-color: #f3f3f3;
     text-align: center;
+    background-color: #9bcfb8;
 }
 
 .carousel {
@@ -101,7 +62,12 @@ nav ul li a:hover {
 
 .carousel img:hover {
     transform: scale(1.05);
-}
+
+
+
+
+
+
 
 /* Rekisteröinti */
 .col-md-5 {
