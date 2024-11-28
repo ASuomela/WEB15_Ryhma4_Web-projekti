@@ -4,33 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elokuvateatteri Kino</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Tyylitiedosto -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Fontti-->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Tyylitiedosto paikallinen -->
+    <link rel="stylesheet" href="/resources/css/styles.css">
+    <!-- Fontti-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-  
-    <!-- Navigointipalkki-->
-    <header>
-        <nav>
-            <!-- Logo -->
-            <a href="index.html" class="logo">
-                <img src="kuvat/LOGO-Kalevala-Engrave.png" alt="Kino Logo">
-            </a>
-            <ul>
-                <li><a href="/pages/01-etusivu/etusivu.html">Etusivu</a></li>
-                <li><a href="elokuvat.html">Elokuvat</a></li>
-                <li><a href="elokuvawiki.html">ElokuvaWiki</a></li>
-                <li><a href="elokuvakerho.html">Elokuvakerho</a></li>
-                <li><a href="tietoameista.html">Tietoa meistä</a></li>
-                <li><a href="rekisteroidy.html">Rekisteröityminen</a></li>
-            </ul>
-        </nav>
-    </header>
+    <header class="main-header">
+
+        <!--Side-navi-->
+                <nav class="side-nav">
+                    <button class="dropbtn"><i class="menu-icon"></i></button>
+                    <div class="side-nav-content">
+                        <a href="/pages/01-etusivu/etusivu.html">Etusivu</a>
+                        <a href="/pages/02-elokuvat/varaus.html">Elokuvat</a>
+                        <a href="/pages/03-elokuvawiki/elokuvawiki.html">Elokuvawiki</a>
+                        <a href="/pages/04-elokuvakerho/elokuvakerho.html">Elokuvakerho</a>
+                        <a href="/pages/05-tietoameista/tietoameista.html">Tietoa meistä</a>
+                        <a href="/pages/06-rekisteroityminen/rekisteroityminen.html">Rekisteröidy</a>
+                    </div>
+                </nav>
+        
+        <!--Logo ja otsikko-->
+                    <a href="/pages/01-etusivu/etusivu.html">
+                        <div class="container-logo-header">
+                            <i class="logo-header"></i>
+                        </div>
+                    </a>
+                
+        <!--Top-navi-->
+                    <nav class="top-nav">
+                     <div class="top-nav-left">
+                        <a href="/pages/01-etusivu/etusivu.html" class="active">Etusivu</a>
+                        <a href="/pages/02-elokuvat/varaus.html">Elokuvat</a>
+                        <a href="/pages/03-elokuvawiki/elokuvawiki.html">Elokuvawiki</a>
+                        <a href="/pages/04-elokuvakerho/elokuvakerho.html">Elokuvakerho</a>
+                        <a href="/pages/05-tietoameista/tietoameista.html">Tietoa meistä</a>
+                     </div>
+                     <div class="top-nav-right">
+                        <input class="searchbar" type="text" placeholder="Haku sivulta..">
+                        <a href="/pages/06-rekisteroityminen/rekisteroityminen.html">Rekisteröidy</a>
+                    </div>
+                    </nav>
+            </header>
 
    <!-- Teatterin nimi keskelle -->
    <section id="teatteri-nimi">
