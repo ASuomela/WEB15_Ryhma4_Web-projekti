@@ -102,6 +102,7 @@ body {
 }
 
 .contact-info .map {
+    display: flex;
     text-align: center;
 }
 
