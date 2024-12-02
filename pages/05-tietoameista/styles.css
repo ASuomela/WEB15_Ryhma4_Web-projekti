@@ -68,12 +68,18 @@ body {
 .contact-info h2 {
     font-family:  "Pirata One", system-ui; 
     font-size: 3rem; /* Tekee fontista suuren */
-
+    display: flex;
+    justify-content: center;
 }
 .address {
     flex: 1;
     margin-right: 20px;
     
+}
+
+.address {
+    text-align: center; /* Tekstin keskitys */
+    margin: 0 auto; /* Keskittää mahdolliset leveydet */
 }
 
 .map {
