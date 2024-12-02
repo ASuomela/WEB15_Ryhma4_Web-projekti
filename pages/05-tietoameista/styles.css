@@ -6,35 +6,6 @@ body {
     color: #fff;
     background-color: #14162e;
 }
-/*
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #2c1b54;
-    padding: 10px 20px;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-.search-bar input {
-    padding: 5px;
-    border: none;
-    border-radius: 5px;
-}
-*/
 .hero img {
     display: block; /* Poistaa oletusarvoiset rivinvaihdot kuvan ympäriltä */
     margin: 0; /* Poistaa kaikki marginaalit */
@@ -42,7 +13,6 @@ body {
     width: 100%; /* Varmistaa, että kuva täyttää koko alueen */
     height: 600px;
 }
-
 
 .about {
     background-color: #f5de8d;
@@ -87,13 +57,18 @@ body {
     cursor: pointer;
     margin: 15px;
 }
-
 .contact-info {
     display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    gap: 20px;
+    justify-content: center;
+    padding: 50px;
+    gap: 5px;
     background-color: #1e3a5f;
+
+}
+.contact-info h2 {
+    font-family:  "Pirata One", system-ui; 
+    font-size: 3rem; /* Tekee fontista suuren */
+
 }
 
 .contact-info .address, .contact-info .map {
@@ -105,6 +80,7 @@ body {
     display: flex;
     text-align: center;
 }
+
 
 .movies {
     padding: 20px;
@@ -120,16 +96,12 @@ body {
 
 .movie-card {
     background-color: #1e3a5f;
-    padding: 10px;
+    padding: 80px;
     border-radius: 10px;
     text-align: center;
 }
 
-footer {
-    background-color: #2c1b54;
-    padding: 10px;
-    text-align: center;
-}
+
 
 /* Responsiiviset tyylit */
 @media (max-width: 1024px) {
@@ -198,8 +170,98 @@ footer {
     .movie-card h3 {
         font-size: 1rem;
     }
+}
 
-    footer {
-        font-size: 0.8rem;
+
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* Footer Content Section */
+.footer-content-section {
+    background-color: #2c2c54; /* Taustan väri */
+    color: #fff; /* Tekstin väri */
+    padding: 40px 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Tasaisesti jaetut kolumnit */
+    align-items: flex-start; /* Kohdistus yläreunaan */
+    flex-wrap: wrap; /* Rivittyminen pienillä näytöillä */
+    gap: 200px; /* Väli kolumnien välillä */
+}
+
+/* Sarakkeet */
+.footer-content > div {
+    flex: 1; /* Kolumnit saavat saman tilan */
+    min-width: 250px; /* Vähimmäisleveys */
+}
+
+/* Yhteystiedot */
+.footer-contact {
+    text-align: left;
+}
+
+/* Logo keskellä */
+.footer-logo {
+    text-align: center;
+}
+
+.footer-logo img {
+    max-width: 300px;
+    height: auto;
+   
+}
+
+/* Uutiskirje ja some */
+.footer-news-social {
+    text-align: left;
+}
+
+.footer-news-social input {
+    margin-top: 10px;
+    padding: 10px;
+    width: 80%;
+}
+
+.footer-news-social button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #ffc107; /* Keltainen */
+    color: #000;
+    border: none;
+    cursor: pointer;
+}
+
+.footer-news-social .social-icons {
+    margin-top: 20px;
+}
+
+.footer-news-social .social-icons img {
+    width: 50x;
+    height: 50px;
+    margin: 10px;
+}
+
+/* Responsiivisuus */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Asettelu pystysuuntaan pienillä näytöillä */
+        align-items: center; /* Kohdistus keskelle */
+    }
+
+    .footer-news-social input {
+        width: 100%; /* Täyttää koko leveys pienillä näytöillä */
     }
 }
+
+
+
+
+

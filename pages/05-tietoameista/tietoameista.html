@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elokuvateatteri Kino</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Tyylitiedosto paikallinen -->
-    <link rel="stylesheet" href="/resources/css/styles.css">
     <!-- Fontti-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"> <!-- Tyylitiedosto paikallinen -->
+    <link rel="stylesheet" href="/resources/css/styles.css">
 </head>
+
 <body>
     <header class="main-header">
 
@@ -70,10 +71,14 @@
                 <section class="contact-info">
                     <div class="address">
                         <h2>Yhteystiedot:</h2>
-                        <p>osoite: Valimotie 2<br>puhelinnumero: 045-557 78833</p>
+                        <p>OSOITE: Taitotalo, Valimotie 8<br> 00380 Helsinki</p>
+                        <p>info@4lpahdev.fi<br> Puh. 045 xxxxxxx</p>
+                        <h3>Löydät meidät somesta</h3>
+                       
                     </div>
+
                     <div class="map">
-                        <h2>Sijaintimme</h2>
+                        <h3>Sijaintimme</h3>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4856.357293126658!2d24.875651271561775!3d60.217713251349934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468df61be3eef617%3A0x8cd35ad3c0ffb57a!2sTaitotalo!5e1!3m2!1sfi!2sfi!4v1730289158037!5m2!1sfi!2sfi" width="600" height="400" style="border:0;" 
                         allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>></iframe>
                     </div>
@@ -84,34 +89,69 @@
                     <div class="movie-grid">
                         <!-- Esimerkki yhdestä elokuvasta -->
                         <div class="movie-card">
-                            <img src="kuvat/Pinquin_leffa.webp" alt="The Blood Moon">
-                            <h3>The Penguin</h3>
-                            <p>Genre: Action</p>
-                            <span class="tag">New Release</span>
+                            <img src="kuvat/movie5.png" width="80%" height="85%" alt="Somme">
+                            <h3>The Battle of the Somme</h3>
+                            <p>Genre: Horror</p>
+                            <span class="tag">Uutta tuotantoa ohjaajalegenda Alfred Hichcockilta.</span>
                         </div>
                         <!-- Elokuvakortti 2-->
                         <div class="movie-card">
-                            <img src="kuvat/Pinquin_leffa.webp" alt="The Penguin">
-                            <h3>The Penguin</h3>
+                            <img src="kuvat/movie3.png" width="80%" height="85%" alt="The Penguin">
+                            <h3>The Sea</h3>
                             <p>Genre: Action</p>
-                            <span class="tag">New Release</span>
+                            <span class="tag">Uutta tuotantoa Renny Harlinilta</span>
                         </div>
                         <!-- Elokuvakortti 3-->
                         <div class="movie-card">
-                            <img src="kuvat/Pinquin_leffa.webp" alt="The Penguin">
+                            <img src="kuvat/movie4.png" width="80%" height="85%" alt="The Penguin">
                             <h3>The Penguin</h3>
                             <p>Genre: Action</p>
                             <span class="tag">New Release</span>
                         </div>
                     </div>
                 </section>
-            </main>
+
             
-            <footer>
-                <div class="footer-content">
-                    <p>© 2022 Kalevala Kino. All Rights Reserved.</p>
+            <section class="footer-content-section">
+                <div class="container">
+                    <div class="footer-content">
+                        <!-- Yhteystiedot -->
+                        <div class="footer-contact">
+                            <h3>Yhteystiedot:</h3>
+                            <p>Käyntiosoite:<br> Taitotalo, Valimotie 8<br> 00380 Helsinki</p>
+                            <p>info@4lpahdev.fi<br> Puh. 045 xxxxxxx</p>
+                            <p>Teatteri ja baari avoinna:<br> Ma-to 16-22<br> Pe 16-22<br> La 11-24<br> Su 12-21</p>
+                            <p>Teatteripäällikkö Henkka Hellsten<br> Arkisin klo 10-16: 045-xxxxxx</p>
+                        </div>
+                        <!-- Logo -->
+                        <div class="footer-logo">
+                            <img src="kuvat/LOGO-kalevala-pieni.png" alt="Kalevala Kino logo">
+                        </div>
+                        <!-- Uutiskirje ja some -->
+                        <div class="footer-news-social">
+                            <h3>Tilaa uutiskirje</h3>
+                            <input type="email" placeholder="Syötä sähköpostiosoite">
+                            <button>Tilaus</button>
+                            <h3>Löydät meidät somesta</h3>
+                            <div class="social-icons">
+                                <a href="#"><img src="kuvat/insta.png" alt="TikTok"></a>
+                                <a href="#"><img src="kuvat/Face.png" alt="Instagram"></a>
+                                <a href="#"><img src="kuvat/linkein.png" alt="Facebook"></a>
+                                <a href="#"><img src="kuvat/youtube.png" alt="YouTube"></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </footer> 
+            </section>   
+</main>    
+
+<!-- Footer -->
+<footer class="footer">
+    <p>© 2022 Kalevala Kino. All Rights Reserved.</p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+</footer>
+
+       
 
 </body>
 </html>
