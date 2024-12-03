@@ -175,7 +175,14 @@ body {
     text-align: center;
     background-color: #2c2c54;
 }
-
+.movies h2 {
+    font-family:  "Pirata One", system-ui; 
+    font-size: 4rem; /* Tekee fontista suuren */
+    font-weight: bold; /* Halutessasi voit myös säätää fontin paksuutta */
+    text-align: center; /* Keskittää otsikon */
+    color: #ffffff; /* Vaihtoehtoisesti muuta tekstin väri */
+    margin: 5px 5px;   /* Ylä- ja alareunan marginaalit pieniksi (esim. 5px) */
+}
 .movie-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -389,6 +396,10 @@ body {
         width: 100%; /* Täyttää koko leveys pienillä näytöillä */
     }
     
+
+
+
+
     footer, footer * {
         font-family: "Roboto", system-ui;
         color: #fdd688 !important; /* Varmista värin soveltuminen */
