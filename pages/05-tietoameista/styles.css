@@ -181,13 +181,49 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
 }
-
+/*
 .movie-card {
     background-color: #1e3a5f;
     padding: 80px;
     border-radius: 10px;
     text-align: center;
 }
+*/
+.movie-card {
+    background-color: #9bcfb6; /* Taustaväri kortille */
+    border-radius: 10px; /* Pyöristetyt kulmat */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Alkuvarjo */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth efekti */
+    overflow: hidden;
+    text-align: center; /* Tekstit keskitetty */
+    padding: 30px;
+}
+
+.movie-card:hover {
+    transform: scale(1.05); /* Kortin suurennus hoverilla */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Korostettu varjo hoverilla */
+}
+
+.movie-card img {
+    border-radius: 10px; /* Kuvien pyöristetyt kulmat */
+    transition: transform 0.3s ease; /* Smooth efekti kuville */
+}
+
+.movie-card:hover img {
+    transform: scale(1.1); /* Kuvan suurennus hoverilla */
+}
+
+.movie-card h3, .movie-card p, .movie-card .tag {
+    margin: 17px 0;
+  
+}
+
+.movie-card .tag {
+    font-size: 0.9rem;
+    color: #555;
+    font-style: italic;
+}
+
 
 
 
