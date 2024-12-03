@@ -5,13 +5,6 @@ main {
     margin-right: 20px;
 }
 
-p {
-    color: #ffde9c;
-}
-
-h3 {
-    color: #ffde9c;
-}
 
 /* kerhon kuvia yms */
 .container {
@@ -69,7 +62,6 @@ h3 {
 /* Elokuvaraati-osion tyylit */
 .elokuvaraati {
     background-color: #14162e;
-    color: #ffde9c;
     padding: 40px 20px;
     text-align: center;
 }
@@ -89,6 +81,7 @@ h3 {
     width: 200px;
     margin: 10px;
     text-align: center;
+    color: #fff;
 }
 
 .raati-jasen img {
@@ -101,7 +94,7 @@ h3 {
 
 .raati-jasen p {
     font-size: 14px;
-    color: #ffde9c;
+    color: #fff;
 }
 
 

@@ -104,6 +104,7 @@ form .button input:hover {
   background: #14162e;
 }
 
+/* RESPONSIIVISUUTTA TÄLLÄ */
 @media (max-width: 584px) {
   .container{
     max-width: 100%;
