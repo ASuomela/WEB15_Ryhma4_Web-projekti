@@ -372,6 +372,11 @@ body {
     height: 50px;
     margin: 10px;
 }
+.social-icons a:hover img {
+    transform: scale(1.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    filter: brightness(1.2); /* Kirkastaa kuvaketta hoverilla */
+}
 
 /* Responsiivisuus */
 @media (max-width: 768px) {
