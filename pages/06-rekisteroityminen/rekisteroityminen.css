@@ -1,67 +1,122 @@
 
-
 main {
-    margin-left: 20px;
-    margin-right: 20px;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
 }
 
-h1, p, b {
-  color: #ffde9c;
-}
+
+
 
 
 /* Rekisteröitymislomake */
 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 700px;
+  width: 100%;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+}
 
-/* Add padding to containers */
-.form-container {
-    padding: 16px;
+.container .title {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+} 
+
+.container .title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+}
+
+.container form .user-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+
+form .user-details .input-box {
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+
+.user-details .input-box .details {
+  display: block;
+   font-weight: 500;
+   margin-bottom: 5px;
+}
+
+.user-details .input-box input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.3;
+
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+  border-color: black;
+} 
+
+/* muokataan nappulaa */
+
+form input[type="radio"]{
+  display: none;
+}
+
+form .button {
+  height: 45px;
+  margin: 45px 0;
+}
+
+form .button input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: black;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  background: #ffde9c;
+
+}
+
+form .button input:hover {
+  background: #14162e;
+}
+
+@media (max-width: 584px) {
+  .container{
+    max-width: 100%;
   }
-  
-  /* Full-width input fields */
-  input[type=text], input[type=password] {
+  form .user-details .input-box {
+    margin-bottom: 15px;
     width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    display: inline-block;
-    border: none;
-    background: #f1f1f1;
   }
-  
-  input[type=text]:focus, input[type=password]:focus {
-    background-color: #ddd;
-    outline: none;
+  .container form .user-details{
+    max-height: 300px;
+    overflow-y: scroll;
   }
-  
-  /* Overwrite default styles of hr */
-  hr {
-    border: 1px solid #f1f1f1;
-    margin-bottom: 25px;
+  .user-details::-webkit-scrollbar{
+    width: 0;
   }
-  
-  /* Set a style for the submit/register button */
-  .registerbtn {
-    background-color: #04AA6D;
-    color: white;
-    padding: 16px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
-  }
-  
-  .registerbtn:hover {
-    opacity:1;
-  }
-  
-  /* Add a blue text color to links */
-  a {
-    color: dodgerblue;
-  }
-  
-  /* Set a grey background color and center the text of the "sign in" section */
-  .signin {
-    background-color: #f1f1f1;
-    text-align: center;
-  }
+}
