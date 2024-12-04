@@ -1,0 +1,65 @@
+/* Tänne paikalliset CSS, kirjastot/framet/yhteinen CSS -> resources/css */
+
+/* Otetaan engravers-old-english -fontti käyttöön */
+@font-face {
+    src: url(/resources/fonts/OPTIEngraversOldEnglish.otf);
+    font-family: "OPTIEngraversOldEnglish";
+}
+
+/* Bodyn muotoilut */
+body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #282B59;
+    margin: 0px;
+    padding: 0px;
+}
+/* "Suosituimmat elokuvat"-otsikko */
+.movie-searchbar {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: #ffde9c;
+    margin-top: 2%;
+    margin-left: 10%;
+}
+/* "Suosituimmat elokuvat"-kuvat */
+.top-films {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-top: 10px;
+    gap: 10px;
+    margin-left: 10%;
+}
+/* "Ajankohtaista" */
+.news-title {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: #ffde9c;
+    margin-top: 2%;
+    margin-left: 10%;
+}
+.news {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 10%;
+    color: whitesmoke;
+    font-size: small;
+    padding-bottom: 10%;
+}
+
+/* Footerin muotoilut */
+footer {
+    text-align: center;
+    margin-top: auto;
+    color: #ffde9c;
+    width: 100%;
+    height: 80px;
+    bottom: 0;
+    background-color: #14162e;
+}
