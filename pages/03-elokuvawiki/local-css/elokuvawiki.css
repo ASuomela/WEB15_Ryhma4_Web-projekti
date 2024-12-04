@@ -98,14 +98,3 @@ body {
     margin-left: 2%;
     margin-right: 10%;
 }
-
-/* Footerin muotoilut */
-footer {
-    text-align: center;
-    margin-top: auto;
-    color: #ffde9c;
-    width: 100%;
-    height: 80px;
-    bottom: 0;
-    background-color: #14162e;
-}
