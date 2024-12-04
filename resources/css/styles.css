@@ -113,12 +113,6 @@
     border-radius: 5px;
 }
 
-.top-nav a.active {
-    background-color: #282B59;
-    border: 2px solid #ffde9c;
-    border-radius: 5px;
-}
-
 .searchbar {
     background-color:#426754;
     color: whitesmoke;
