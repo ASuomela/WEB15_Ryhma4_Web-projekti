@@ -16,8 +16,8 @@ body {
     margin: 0px;
     padding: 0px;
 }
-/* "Suosituimmat elokuvat"-otsikko */
-.movie-searchbar {
+/* elokuvahaku-otsikko */
+.content .movie-searchbar {
     display: flex;
     justify-content: left;
     align-items: center;
@@ -25,7 +25,7 @@ body {
     margin-top: 2%;
     margin-left: 10%;
 }
-/* "Suosituimmat elokuvat"-kuvat */
+/* elokuva-hakukenttä */
 .top-films {
     display: flex;
     justify-content: left;
@@ -33,24 +33,6 @@ body {
     padding-top: 10px;
     gap: 10px;
     margin-left: 10%;
-}
-/* "Ajankohtaista" */
-.news-title {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    color: #ffde9c;
-    margin-top: 2%;
-    margin-left: 10%;
-}
-.news {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    margin-left: 10%;
-    color: whitesmoke;
-    font-size: small;
-    padding-bottom: 10%;
 }
 
 /* Footerin muotoilut */
