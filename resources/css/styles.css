@@ -248,6 +248,10 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     filter: brightness(1.2); /* Kirkastaa kuvaketta hoverilla */
 }
+.copyright {
+    display: flex;
+    justify-content: center;
+}
 
 /* Responsiivisuus */
 @media (max-width: 768px) {
