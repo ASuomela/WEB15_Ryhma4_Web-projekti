@@ -6,10 +6,12 @@
     <title>Kalevala Kino - Elokuvawiki</title>
     <link rel="stylesheet" href="/resources/css/styles.css">
     <link rel="stylesheet" href="local-css/elokuvawiki.css">
-    <!--Google Fonts: Roboto-->
+    <!--Google Fonts: Pirata One ja Roboto-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
 </head>
 
 <body>
@@ -46,25 +48,66 @@
                 <a href="/pages/05-tietoameista/tietoameista.html">Tietoa meistä</a>
              </div>
              <div class="top-nav-right">
-                <input class="searchbar" type="text" placeholder="Haku sivulta..">
+                <input class="nav-searchbar" type="text" id="nav-searchBar" placeholder="Haku sivustolta..">                <ul id="resultsList"></ul>
                 <a href="/pages/06-rekisteroityminen/rekisteroityminen.html">Rekisteröidy</a>
             </div>
             </nav>
     </header>
-
+<!--Sisältö-->
     <section id="content">
+        <div class="elokuvawiki-title">
+            <h1>Kalevala Kinon elokuvawiki</h1>
+        </div>
+        <div class="movie-searchbar-container" id="movie-searchbar-container">
             <div class="movie-searchbar-title">
-                <h1>Elokuvahaku</h1>
+                <h1>Elokuvawiki</h1>
             </div>
             <div class="movie-searchbar">
+                <input
+                    id="movie-search"
+                    type="search"
+                    placeholder="Hae elokuvia..."
+                    list="search-suggestions"
+                    autocomplete="off"
+                />
 
+                <datalist id="search-suggestions">
+                    <option value="Movie 1">
+                    <option value="Movie 2">
+                    <option value="Movie 3">
+                    <option value="Movie 4">
+                    <option value="Movie 5">
+                    <option value="Movie 6">
+                </datalist>
             </div>
+        </div>
+
+        <div class="search-result-container">
+            <div class="search-result-title" id="search-result-title">
+            <h1>Blood Moon</h1>
+            </div>
+            <div class="search-result">
+            <img src="/resources/images/movies/movie1.png" width="100%" alt="movie1" class="search-result-image">
+            <p class="search-result-text" width="100%">Blood Moon on kiehtova yhdistelmä jännitystä, kauhua ja yliluonnollisia elementtejä. Elokuvassa nuori nainen, Ella, palaa kotikaupunkiinsa ja löytää itsensä entistäkin vaarallisemmasta tilanteesta. Väkivaltaisten välikohtauksien jälkeen hän päättää paeta ja etsiä turvaa erämaasta. Yöllinen verinen kuun nousu tuo kuitenkin mukanaan pahantahtoisia voimia, jotka jahdittavat Ellaa. Pian hän huomaa olevansa kiinni verisessä pelissä, jossa hänen täytyy kohdata paitsi ulkoiset viholliset myös omat pelkonsa ja synkät salaisuutensa.
+            <br><br>
+            Elokuvan tunnelma on tiivis ja karmiva, ja sen visuaaliset elementit korostavat vaaran läsnäoloa. Pimeyden ja punaisen kuun välinen yhteys tuo elokuvaan mystiikkaa, ja jännityksen lisääntyessä katsoja pääsee kokemaan Ellan epätoivon ja rohkeuden. Kun verinen kuu loistaa taivaalla, kaikki rajat tuntuvat hämärtyvän, eikä mikään ole enää sitä miltä näyttää.
+            <br><br>
+            Blood Moon on intensiivinen trilleri, jossa on myös syvällisempiä teemoja – selviytyminen, anteeksianto ja pelko ovat keskeisiä tekijöitä, kun päähenkilö taistelee paitsi fyysistä myös henkistä taisteluaan. Tämän elokuvan seuraaminen on elämys, joka pitää katsojan tiukasti otteessaan, eikä se päästä irti ennen viimeistä hetkistä.
+            <br><br>
+            Elokuvan ohjaaja on Isabelle Renard, ranskalainen elokuvantekijä, joka on tunnettu omaperäisistä, visuaalisesti rikkaista kauhuelokuvistaan. Renardin tyyli yhdistää psykologista jännitystä ja yliluonnollisia elementtejä, luoden maailmoja, joissa kauhu ja kauneus sekoittuvat saumattomasti. Hänen aiempia teoksiaan ovat La Nuit des Ombres ja Echoes of the Forgotten, jotka ovat saaneet kiitosta erityisesti tunnelmasta ja syvällisestä kerronnasta.
+            </p>
+            </div>
+        </div>
                         
     </section>
-    
+
+<!--Footer-->
     <footer>
         <p>&copy; 2024 Kalevala Kino. All rights reserved.</p>
     </footer>
+
+<!--JavaScript-->
+    <script src="/resources/javascript/javascript-shared.js"></script>
 
 </body>
 </html>

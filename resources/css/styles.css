@@ -107,18 +107,48 @@
         display: none;
     }
 }
+/*Napit vaihtaa väriä kun hoveraa*/
 .top-nav a:hover {
     background-color: #426754;
     border: 2px solid #ffde9c;
     border-radius: 5px;
 }
-
-.searchbar {
-    background-color:#426754;
+/*Headerin hakukenttä*/
+.nav-searchbar {
+    background-color:#282B59;
     color: whitesmoke;
     font-family: 'Roboto', sans-serif;
     font-style: italic;
     border: 2px solid #ffde9c;
+    width: max-content;
+}
+/*Headerin hakukentän tuloslistan muotoilut*/
+#resultsList {
+    border: 1px solid #ccc;
+    display: none;
+    position: absolute;
+    background-color: #14162e;
+    color: #ffde9c;
+    width: calc(100% - 20px);
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+    margin-top: 5px;
+    border-radius: 5px;
+    list-style-type: none;
+    padding: 0;
+}
+#resultsList li {
+    padding: 8px;
+    cursor: pointer;
+}
+#resultsList li:hover {
+    background-color:#426754;
+
+}
+/*Sana korostuu sivulla kun etsii headerin hakukentästä*/
+.highlight {
+    background-color: azure;
 }
 
 /* Bodyn muotoilut */
@@ -133,12 +163,108 @@ body {
 }
 
 /* Footerin muotoilut */
-footer {
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* Footer Content Section */
+.footer-content-section {
+    background-color:#14162e; /* Taustan väri */
+    color: #fff; /* Tekstin väri */
+    padding: 40px 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Tasaisesti jaetut kolumnit */
+    align-items: flex-start; /* Kohdistus yläreunaan */
+    flex-wrap: wrap; /* Rivittyminen pienillä näytöillä */
+    gap: 200px; /* Väli kolumnien välillä */
+}
+
+/* Sarakkeet */
+.footer-content > div {
+    flex: 1; /* Kolumnit saavat saman tilan */
+    min-width: 250px; /* Vähimmäisleveys */
+}
+
+/* Yhteystiedot */
+.footer-contact {
+    text-align: left;
+}
+
+/* Logo keskellä */
+.footer-logo {
     text-align: center;
-    margin-top: auto;
+}
+
+.footer-logo img {
+    margin-top: 10%;
+    max-width: 300px;
+    height: auto;
+   
+}
+.footer-copyright {
     color: #ffde9c;
-    width: 100%;
-    height: 80px;
-    bottom: 0;
-    background-color: #14162e;
+}
+
+/* Uutiskirje ja some */
+.footer-news-social {
+    text-align: left;
+}
+
+.footer-news-social input {
+    margin-top: 10px;
+    padding: 10px;
+    width: 80%;
+}
+
+.footer-news-social button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #f5de8d; /* Keltainen */
+    color: #000;
+    border: none;
+    cursor: pointer;
+}
+
+.footer-news-social .social-icons {
+    margin-top: 20px;
+}
+
+.footer-news-social .social-icons img {
+    width: 50x;
+    height: 50px;
+    margin: 10px;
+}
+.social-icons a:hover img {
+    transform: scale(1.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    filter: brightness(1.2); /* Kirkastaa kuvaketta hoverilla */
+}
+
+/* Responsiivisuus */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Asettelu pystysuuntaan pienillä näytöillä */
+        align-items: center; /* Kohdistus keskelle */
+    }
+
+    .footer-news-social input {
+        width: 100%; /* Täyttää koko leveys pienillä näytöillä */
+    }
+    
+    footer, footer * {
+        font-family: "Roboto", system-ui;
+        color: #fdd688 !important; /* Varmista värin soveltuminen */
+    }
+    
+
+
 }
