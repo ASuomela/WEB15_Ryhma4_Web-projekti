@@ -1,8 +1,9 @@
 
 
-main {
+body {
     margin-left: 20px;
     margin-right: 20px;
+    color: #fff;
 }
 
 
@@ -74,7 +75,8 @@ main {
 .raati-container {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    
+
 }
 
 .raati-jasen {
@@ -86,8 +88,8 @@ main {
 
 .raati-jasen img {
     width: 100%;
-    border-radius: 50%;
     height: auto;
+    border-radius: 50%;
     max-width: 150px;
     margin-bottom: 10px;
 }
