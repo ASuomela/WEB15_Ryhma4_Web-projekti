@@ -1,6 +1,4 @@
-
-// Top-navin hakukentän toiminnallisuus
-
+// Top-navin hakukentän toiminnallisuus ja top-navin nykyisen sivun alleviivaus
 document.addEventListener('DOMContentLoaded', (event) => {
     document.getElementById('nav-searchBar').addEventListener('input', function() {
         const query = this.value.toLowerCase();
@@ -14,8 +12,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 { name: 'Ajankohtaista', id: 'news-title', url: '/pages/01-etusivu/etusivu.html' },           
                 // Elokuvawiki
                 { name: 'Elokuvawiki', id: 'movie-searchbar-container', url: '/pages/03-elokuvawiki/elokuvawiki.html' },
-                /* tähän lisätään muut sivut samaan tyyliin, eli "Name: hakutuloksen nimi,
-                 id: hakutuloksen ID HTML-koodissa, url: sivu jolla hakutulos on." */
+                /* Lisää omat sivut samaan tyyliin:
+                Name: miltä hakutulos näyttää
+                id: HTML koodista ID, mihin haluat että hakutulos vie
+                url: millä sivulla kyseinen hakutulos on */
             ];
 
             const filteredResults = results.filter(result => result.name.toLowerCase().includes(query));
@@ -61,4 +61,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
             window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
         }
     }
+
+    // Näyttää top-navin aktiivisen sivun alleviivauksena
+    const navLinks = document.querySelectorAll('.nav-link');
+    const currentPath = window.location.pathname;
+
+    navLinks.forEach(link => {
+        if (link.getAttribute('href') === currentPath) { // vertaa nykyistä sivua naviin
+            link.classList.add('active'); // lisää CSS-muotoilun aktiiviselle top-navin linkille
+        }
+    });
 });
