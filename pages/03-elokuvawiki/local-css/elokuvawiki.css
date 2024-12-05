@@ -92,9 +92,10 @@ body {
 .search-result-image {
     margin-right: 2%;
     margin-left: 10%;
+    background-color: black;
 }
 .search-result-text {
     color: whitesmoke;
     margin-left: 2%;
     margin-right: 10%;
-}
+    font-size: 20px;
