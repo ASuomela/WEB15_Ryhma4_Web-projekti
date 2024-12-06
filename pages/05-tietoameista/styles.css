@@ -15,17 +15,17 @@ body {
 }
 
 .about {
-    background-color: #f5de8d;
+    background-color: #14162e;
     padding: 20px;
     text-align: center;
-    color: #000;
+    color: #f8f5f5;
 }
 .about h1 {
     font-family: "Pirata One", system-ui;
     font-size: 6rem; /* Tekee fontista suuren */
     font-weight: bold; /* Halutessasi voit myös säätää fontin paksuutta */
     text-align: center; /* Keskittää otsikon */
-    color: #000; /* Vaihtoehtoisesti muuta tekstin väri */
+    color: #fffbfb; /* Vaihtoehtoisesti muuta tekstin väri */
     margin: 5px 0;   /* Ylä- ja alareunan marginaalit pieniksi (esim. 5px) */
 }
 
@@ -50,13 +50,38 @@ body {
 
 .about-content button {
     padding: 10px 20px;
-    background-color: #14162e;
-    color: white;
+    background-color: #f2d852;
+    color: rgb(0, 0, 0);
     border: none;
     border-radius: 5px;
     cursor: pointer;
     margin: 15px;
 }
+/* Teatteri Kuvien tyylit */
+.theatre {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsiivinen asettelu */
+    gap: 20px; /* Väli kuvien välillä */
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.theatre img {
+    width: 100%;
+    height: auto; /* Kuvan mittasuhteiden säilyttäminen */
+    border-radius: 10px; /* Pyöristetyt kulmat */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Kevyt varjo */
+    transition: transform 0.3s ease; /* Hover-efekti */
+}
+
+.theatre img:hover {
+    transform: scale(1.05); /* Suurentaminen hoverilla */
+}
+
+
+
+
+
 .contact-info {
     display: flex;
     justify-content: space-between;
