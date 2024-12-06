@@ -15,6 +15,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/resources/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/resources/favicon-16x16.png">
     <link rel="manifest" href="/resources/site.webmanifest">      
+   
+    </head>
 
 <body>
     <header class="main-header">
@@ -111,6 +113,7 @@
                         <!-- Esimerkki yhdestä elokuvasta -->
                         <div class="movie-card">
                             <img src="kuvat/movie5.png" width="80%" height="85%" alt="Somme">
+                            <button class="movie-button" onclick="window.location.href='/pages/01-etusivu/etusivu.html'">Varaa liput</button>
                             <h3>The Battle of the Somme</h3>
                             <p>Genre: Horror</p>
                             <span class="tag">Uutta tuotantoa ohjaajalegenda Alfred Hichcockilta.</span>
@@ -118,6 +121,7 @@
                         <!-- Elokuvakortti 2-->
                         <div class="movie-card">
                             <img src="kuvat/movie3.png" width="80%" height="85%" alt="The Sea">
+                            <button class="movie-button" onclick="window.location.href='/pages/01-etusivu/etusivu.html'">Varaa liput</button>
                             <h3>The Sea</h3>
                             <p>Genre: Action</p>
                             <span class="tag">Uutta tuotantoa Renny Harlinilta</span>
@@ -125,13 +129,43 @@
                         <!-- Elokuvakortti 3-->
                         <div class="movie-card">
                             <img src="kuvat/movie4.png" width="80%" height="85%" alt="The Swords">
+                            <button class="movie-button" onclick="window.location.href='/pages/01-etusivu/etusivu.html'">Varaa liput</button>
                             <h3>The Swords</h3>
                             <p>Genre: Action</p>
                             <span class="tag">New Release</span>
                         </div>
                     </div>
-                </section>
-
+                    <section class="food-carousel">
+                        <h2>Valitse ateria:</h2>
+                        <div class="carousel-container">
+                            <button class="carousel-btn prev-btn" onclick="changeSlide(-1)">&#10094;</button>
+                            <div class="carousel-slides">
+                                <!-- Ateriavaihtoehto 1 -->
+                                <div class="slide">
+                                    <img src="kuvat/Popcorn.jpg" alt="Ateria 1">
+                                    <h3>Pockorn pesä</h3>
+                                    <p>Hinta: 10,50€</p>
+                                    <button class="reserve-btn" onclick="reserveMeal('Pockorn pesä')">Varaa</button>
+                                </div>
+                                <!-- Ateriavaihtoehto 2 -->
+                                <div class="slide">
+                                    <img src="kuvat/snack.jpg" alt="Ateria 2">
+                                    <h3>Snacki combo</h3>
+                                    <p>Hinta: 18,00€</p>
+                                    <button class="reserve-btn" onclick="reserveMeal('Snacki combo')">Varaa</button>
+                                </div>
+                                <!-- Ateriavaihtoehto 3 -->
+                                <div class="slide">
+                                    <img src="kuvat/drink.jpg" alt="Ateria 3">
+                                    <h3>Cocktail kokoelma</h3>
+                                    <p>Hinta: 12,00€</p>
+                                    <button class="reserve-btn" onclick="reserveMeal('Cocktail kokoelma')">Varaa</button>
+                                </div>
+                            </div>
+                            <button class="carousel-btn next-btn" onclick="changeSlide(1)">&#10095;</button>
+                        </div>
+                    </section>
+                    
             
       <!--Footer-->
       <footer>
@@ -174,8 +208,11 @@
                 </div>
         </section>
     </footer>
-
+  
     <!--JavaScript-->
-    <script src="/resources/javascript/javascript-shared.js"></script>
+  <script src="/resources/javascript/javascript-shared.js" defer></script>
+  <script src="/pages/05-tietoameista/javascript-page-5.js" defer></script>
+
+   
 </body>
 </html>

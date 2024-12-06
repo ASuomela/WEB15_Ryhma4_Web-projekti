@@ -188,15 +188,31 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
 }
-/*
-.movie-card {
-    background-color: #1e3a5f;
-    padding: 80px;
-    border-radius: 10px;
-    text-align: center;
+/* Button styling */
+.movie-button {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f2d852;
+    color: #030303;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 10;
 }
-*/
+
+/* Button hover effect */
+.movie-button:hover {
+    background-color: #282b58;
+    color: #fff;
+}
+
 .movie-card {
+    position: relative; /*kortin viitekehys napille*/
     background-color: #9bcfb6; /* Taustaväri kortille */
     border-radius: 10px; /* Pyöristetyt kulmat */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Alkuvarjo */
@@ -230,7 +246,6 @@ body {
     color: #555;
     font-style: italic;
 }
-
 
 
 
@@ -312,4 +327,94 @@ body {
     padding: 0 20px;
 }
 
+
+
+
+/* FOOD Karuselli */
+.food-carousel {
+    padding: 20px;
+    text-align: center;
+    background-color: #f2d852;
+}
+
+.food-carousel h2 {
+    font-family: "Pirata One", sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    text-align: center;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.slide h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.slide p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.carousel-btn:hover {
+    background-color: #555;
+}
+
+.reserve-btn {
+    background-color: #9bcfb8;
+    color: #030303;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reserve-btn:hover {
+    background-color: #282b58;
+    color: #fff;
+}
 
