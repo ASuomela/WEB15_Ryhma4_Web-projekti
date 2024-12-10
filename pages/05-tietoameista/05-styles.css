@@ -69,9 +69,9 @@ body {
 
 .theatre img {
     width: 100%;
-    height: auto; /* Kuvan mittasuhteiden säilyttäminen */
-    border-radius: 10px; /* Pyöristetyt kulmat */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Kevyt varjo */
+    height: 400px; /* Kuvan mittasuhteiden säilyttäminen */
+    border-radius: 20px; /* Pyöristetyt kulmat */
+    box-shadow: 0 4px 6px rgba(243, 222, 31, 0.2); /* Kevyt varjo */
     transition: transform 0.3s ease; /* Hover-efekti */
 }
 
