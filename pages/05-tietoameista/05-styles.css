@@ -349,13 +349,6 @@ body {
 
 
 
-/* Container */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
 
 
 
@@ -399,12 +392,12 @@ body {
 
 .slide h3 {
     font-size: 1.5rem;
-    color: #333;
+    color: #f2d852;
 }
 
 .slide p {
     font-size: 1rem;
-    color: #555;
+    color: #fff;
 }
 
 .carousel-btn {
