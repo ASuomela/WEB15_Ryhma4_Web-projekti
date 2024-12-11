@@ -6,6 +6,19 @@ body {
     color: #fff;
     background-color: #14162e;
 }
+
+/* Header */
+header {
+    position: fixed; /* Header pysyy kiinteänä scrollatessa */
+    top: 0;
+    width: 100%;
+    z-index: 100; /* Varmistetaan, että header pysyy aina päällä */
+    background-color: #282b58; /* Taustaväri headerille */
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Lisää hieman varjoa */
+}
+
 .hero img {
     display: block; /* Poistaa oletusarvoiset rivinvaihdot kuvan ympäriltä */
     margin: 0; /* Poistaa kaikki marginaalit */
@@ -346,17 +359,15 @@ body {
         font-size: 1rem;
     }
 }
-
-
-
-
-
-
 /* FOOD Karuselli */
 .food-carousel {
     padding: 20px;
     text-align: center;
     background-color: #282b58;
+    margin-top: 80px; /* Nostetaan karusellia headerin alle */
+    position: relative; /* Mahdollistaa parallaksin */
+    z-index: 1; /* Priorisoi karusellin näkymän */
+
 }
 
 .food-carousel h2 {
@@ -385,7 +396,9 @@ body {
 }
 
 .slide img {
-    width: 100%;
+    width: 100%; /* Koko leveys */
+    height: 300px; /* Kiinteä korkeus */
+    object-fit: cover; /* Varmistaa, että kuva ei veny */
     border-radius: 10px;
     margin-bottom: 15px;
 }
@@ -411,6 +424,7 @@ body {
     cursor: pointer;
     border-radius: 50%;
     font-size: 18px;
+    z-index: 2; /* Nappien prioriteetti */
 }
 
 .prev-btn {
@@ -440,4 +454,33 @@ body {
     background-color: #282b58;
     color: #fff;
 }
+
+/* Parallaksiefekti */
+.food-carousel {
+    position: sticky;
+    top: 0; /* Pysyy näkyvillä yläreunassa */
+}
+
+/* Responsiivisuus */
+@media (max-width: 768px) {
+    .food-carousel h2 {
+        font-size: 3rem;
+    }
+    .slide img {
+        height: 200px; /* Pienemmät kuvat pienillä näytöillä */
+    }
+    .carousel-btn {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}
+footer {
+    position: relative; /* Tai fixed, jos haluat footerin pysyvän paikallaan */
+    z-index: 10; /* Sama tai korkeampi kuin food sliderilla, jos tarvitsee olla sen päällä */
+    background-color: #f5de8d; /* Esimerkkiväri */
+}
+
+
+
+
 
