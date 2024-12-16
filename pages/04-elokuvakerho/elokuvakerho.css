@@ -1,23 +1,55 @@
 
-
+/* bodyn muotoilut  */
 body {
+ 
+    display: flex;
     margin-left: 20px;
     margin-right: 20px;
+    background-color: #282B59;
     color: #fff;
+ 
+    
+}
+/* "Elokuvakerho"- otsikkoon lisää kokoa  */
+h3 {
+    font-size: 25px;
 }
 
+ 
 
-/* kerhon kuvia yms */
-.container {
-    padding: 2rem;
+
+/* container sisältää sliderin ja esittelyn*/
+.kerho-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #14162e;
+    margin: 40px;
+    padding: 20px;
+    
 }
 
+/* esittelytekstin koko ja asettelu containerissa */
+.kerho-container .esittely {
+    
+    flex: 1;
+    width: 50%;
+    justify-content:center;
+    align-items: center;
+    font-size: 25px;
+    margin: 20px;
+}
+ 
+/* tästä alkaa pelkästään kuvasliderin muotoilut */
 .slider-wrapper {
+    flex: 2;
     position: relative;
-    max-width: 48rem;
-    margin: 0 auto;
+    max-width: 58rem;
+    margin: 0;
 }
 
+/*määrittelee tarkemminn sliderin toiminnallisuudet*/
 .slider {
     display: flex;
     aspect-ratio: 16 / 9;
@@ -28,6 +60,7 @@ body {
     border-radius: 0.5rem;
 }
 
+/*sliderin kuvien määrittelyä*/
 .slider img {
     flex: 1 0 100%;
     scroll-snap-align: start;
@@ -35,8 +68,9 @@ body {
 
 }
 
+/*sliderin navigaation (kuvien vaihto) toiminnot*/
 .slider-nav {
-    display: flex;
+   
     column-gap: 1rem;
     position: absolute;
     bottom: 1.25rem;
@@ -45,6 +79,7 @@ body {
     z-index: 1;
 }
 
+/* sliderin tekstin muotoilut */
 .slider-nav a {
     width: 0.5rem;
     height: 0.5rem;
@@ -54,6 +89,7 @@ body {
     transition: opacity ease 250ms;
 }
 
+/* hoverilla (kun hiiren siirtää päälle) nappula muuttuu*/
 .slider-nav a:hover {
     opacity: 1;
 } 
@@ -65,20 +101,25 @@ body {
     background-color: #14162e;
     padding: 40px 20px;
     text-align: center;
+    margin: 40px;
 }
 
+/* otsikko*/
 .elokuvaraati h2 {
     font-size: 24px;
     margin-bottom: 20px;
 }
 
+/* raatiosion tyylit */
 .raati-container {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     
 
 }
-
+ 
+/* jokaiselle jäsenelle varatun tilan tyylit*/
 .raati-jasen {
     width: 200px;
     margin: 10px;
@@ -86,16 +127,18 @@ body {
     color: #fff;
 }
 
+/* raatijäsenen kuvan määrittelyä*/
 .raati-jasen img {
     width: 100%;
-    height: auto;
+    height: 100%;
     border-radius: 50%;
-    max-width: 150px;
+    max-width: 400px;
     margin-bottom: 10px;
 }
 
+/* jäsenen esittelytekstin tyylit*/
 .raati-jasen p {
-    font-size: 14px;
+    font-size: 20px;
     color: #fff;
 }
 
