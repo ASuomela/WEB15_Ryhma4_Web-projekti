@@ -3,48 +3,311 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elokuvat</title>
+    <title>Kalevala Kino - Elokuvat</title>
+    <link rel="stylesheet" href="/resources/css/styles.css">
+    <link rel="stylesheet" href="varaus.css">
+    <!--Google Fonts: Pirata One ja Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
+
 <body>
 
-    <nav>
-        <a href="#eka">Etusivu</a>
-        <a href="#toka">Elokuvat</a>
-        <a href="#kolmas">Elokuvakerho</a>
-        <a href="#neljäs">Rekisteröidy</a>
-    </nav>
+    <header class="main-header">
 
-    <div id="toka">
-        <h1>Näytökset</h1>
+        <!--Side-navi-->
+        <nav class="side-nav">
+            <button class="dropbtn"><i class="menu-icon"></i></button>
+            <div class="side-nav-content">
+                <a href="/pages/01-etusivu/etusivu.html">Etusivu</a>
+                <a href="/pages/02-elokuvat/varaus.html">Elokuvat</a>
+                <a href="/pages/03-elokuvawiki/elokuvawiki.html">Elokuvawiki</a>
+                <a href="/pages/04-elokuvakerho/elokuvakerho.html">Elokuvakerho</a>
+                <a href="/pages/05-tietoameista/tietoameista.html">Tietoa meistä</a>
+                <a href="/pages/06-rekisteroityminen/rekisteroityminen.html">Rekisteröidy</a>
+            </div>
+        </nav>
+
+        <!--Logo ja otsikko-->
+        <a href="/pages/01-etusivu/etusivu.html">
+            <div class="container-logo-header">
+                <i class="logo-header"></i>
+            </div>
+        </a>
+        
+        <!--Top-navi-->
+        <nav class="top-nav">
+            <div class="top-nav-left">
+                <a href="/pages/01-etusivu/etusivu.html" class="active">Etusivu</a>
+                <a href="/pages/02-elokuvat/varaus.html">Elokuvat</a>
+                <a href="/pages/03-elokuvawiki/elokuvawiki.html">Elokuvawiki</a>
+                <a href="/pages/04-elokuvakerho/elokuvakerho.html">Elokuvakerho</a>
+                <a href="/pages/05-tietoameista/tietoameista.html">Tietoa meistä</a>
+            </div>
+            <div class="top-nav-right">
+                <input class="nav-searchbar" type="text" id="nav-searchBar" placeholder="Haku sivulta..">                <ul id="resultsList"></ul>
+                <a href="/pages/06-rekisteroityminen/rekisteroityminen.html">Rekisteröidy</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <section id="sisalto">
+    <div class="otsikko" id="otsikko">
+        <h1>Elokuvat ja näytökset</h1>
     </div>
-    <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn">📅</button>
-        <ul id="myDropdown" class="dropdown-content">
-            <li><a href="#">Kaikki Näytökset</a></li>
-            <li><a href="#">Tänään</a></li>
-            <li><a href="#">Huomenna</a></li>
-        </ul>
+
+
+    <div class="sisalto2" id="sisalto2">
+      <div>
+        <button onclick = "changeContent('maanantai')">Maanantai</button>
+        <button onclick = "changeContent('tiistai')">Tiistai</button>
+        <button onclick = "changeContent('keskiviikko')">Keskiviikko</button>
+        <button onclick = "changeContent('torstai')">Torstai</button>
+        <button onclick = "changeContent('perjantai')">Perjantai</button>
+        <button onclick = "changeContent('lauantai')">Lauantai</button>
+        <button onclick = "changeContent('sunnuntai')">Sunnuntai</button>
+        <button onclick = "calendar('')">📅</button>
+      </div>
     </div>
 
+    <div id="content" class="content">
+          <img src="/resources/images/movies/movie1.png" alt="/resources/images/ErrorWarning.png">
+          <img src="/resources/images/movies/movie2.png"  alt="/resources/images/ErrorWarning.png">
+          <img src="/resources/images/movies/movie3.png" alt="/resources/images/ErrorWarning.png">
+    </div>
+
+    <br>
     
-    <img src="kuvat/Hannunvaakuna.png" alt="">
-    <img src="kuvat/Hannunvaakuna.png" alt="">
-    <img src="kuvat/Hannunvaakuna.png" alt=""><br>
-    <img src="kuvat/Hannunvaakuna.png" alt="">
-    <img src="kuvat/Hannunvaakuna.png" alt="">
-    <img src="kuvat/Hannunvaakuna.png" alt=""><br>
-    <img src="kuvat/Hannunvaakuna.png" alt="">
-    <img src="kuvat/Hannunvaakuna.png" alt="">
-    <img src="kuvat/Hannunvaakuna.png" alt=""><br>
-    <img src="kuvat/Hannunvaakuna.png" alt="">
-    <img src="kuvat/Hannunvaakuna.png" alt="">
-    <img src="kuvat/Hannunvaakuna.png" alt=""><br>
-    <img src="kuvat/Hannunvaakuna.png" alt="">
-    <img src="kuvat/Hannunvaakuna.png" alt="">
-    <img src="kuvat/Hannunvaakuna.png" alt=""><br>
+    <div id="canvasContainer">
+      <canvas id="seatingCanvas" width="600" height="500"></canvas>
+    </div>
 
 
-    
-    
+    <div class="info">
+      <p>🟩 Vihreä: Vapaa | 🟥 Punainen: Varattu | 🟨 Keltainen: Valittu</p>
+    </div>
+
+
+      <div class="leffaevaat">
+        <h1>Leffaeväät</h1>
+        <!-- Ensimmäinen kuva ja laskuri -->
+        <div class="item">
+          <img src="/resources/images/Popcorn.jpg" alt="/resources/images/ErrorWarning">
+          <div class="controls">
+            <button onclick="updateCounter('counter1', -1)">-</button>
+            <span id="counter1">0</span>
+            <button onclick="updateCounter('counter1', 1)">+</button>
+          </div>
+        </div>
+        <!-- Toinen kuva ja laskuri -->
+        <div class="item">
+          <img src="/resources/images/Soda.png" alt="/resources/images/ErrorWarning">
+          <div class="controls">
+            <button onclick="updateCounter('counter2', -1)">-</button>
+            <span id="counter2">0</span>
+            <button onclick="updateCounter('counter2', 1)">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    </section>
+
+    <!--Footer-->
+    <footer>
+        <section class="footer-content-section">
+            <div class="container">
+                <div class="footer-content">
+                    <!-- Yhteystiedot -->
+                    <div class="footer-contact">
+                        <h3>Yhteystiedot:</h3>
+                        <p>Käyntiosoite:<br><br> Taitotalo, Valimotie 8<br> 00380 Helsinki</p>
+                        <p>info@4lphadev.fi<br> Puh. 045 xxxxxxx</p>
+                        <p>Teatteri ja baari avoinna:<br> Ma-to 16-22<br> Pe 16-22<br> La 11-24<br> Su 12-21</p>
+                        <p>Teatteripäällikkö Henkka Hellsten<br> Arkisin klo 10-16: 045-xxxxxx</p>
+                    </div>
+                    <!-- Logo -->
+                    <div class="footer-logo">
+                        <img src="/resources/images/LOGO-Kalevala-Engrave-modified.png" alt="Kalevala Kino logo" width="75%" height="75%">
+                    </div>
+                    <!-- Uutiskirje ja some -->
+                    <div class="footer-news-social">
+                        <h3>Tilaa uutiskirje</h3>
+                        <input type="email" placeholder="Syötä sähköpostiosoite">
+                        <button>Lähetä</button>
+
+                        <h3>Löydät meidät somesta</h3>
+                        <div class="social-icons">
+                            <a href="#"><img src="/resources/images/instagram.png" alt="Instagram"></a>
+                            <a href="#"><img src="/resources/images/facebook.png" alt="Facebook"></a>
+                            <a href="#"><img src="/resources/images/linkedin.png" alt="LinkedIn"></a>
+                            <a href="#"><img src="/resources/images/youtube.png" alt="YouTube"></a>
+                            <a href="#"><img src="/resources/images/tiktok.png" alt="TikTok"></a>
+                            <a href="#"><img src="/resources/images/pinterest.png" alt="Pinterest"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2022 Kalevala Kino. All Rights Reserved.</p>
+                <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+                </div>
+        </section>
+    </footer>
+
+
+
+    <!--JavaScript    heitä vielä javascripti tästä alta yhteiseen javascriptiin
+
+    <script src="/resources/javascript/javascript-shared.js"></script>-->
+
+    <script>
+
+      // Funktio päivittää laskurin arvon
+      function updateCounter(counterId, value) {
+      const counter = document.getElementById(counterId);
+      let currentValue = parseInt(counter.textContent, 10);
+      currentValue += value; // Lisää tai vähennä arvoa
+      if (currentValue < 0) currentValue = 0; // Estetään negatiiviset arvot
+      counter.textContent = currentValue; // Päivitetään laskurin arvo
+    }
+        // Funktio vaihtaa päivän sisällön
+        function changeContent(day) {
+            let contentDiv = document.getElementById("content");
+            
+            // Tyhjää alku
+            contentDiv.innerHTML = '';
+
+            // Vaihda sisältö
+            switch(day) {
+                case 'maanantai':
+                    contentDiv.innerHTML = `
+                    <img src="/resources/images/movies/movie1.png" alt="/resources/images/ErrorWarning.png" width="15%">
+                    <img src="/resources/images/movies/movie2.png"  alt="/resources/images/ErrorWarning.png">
+                    <img src="/resources/images/movies/movie3.png" alt="/resources/images/ErrorWarning.png">
+                    `;
+                    break;
+                case 'tiistai':
+                    contentDiv.innerHTML = `
+                    <img src="/resources/images/movies/movie4.png " alt="/resources/images/ErrorWarning.png">
+                    <img src="/resources/images/movies/movie5.png"  alt="/resources/images/ErrorWarning.png">
+                    <img src="/resources/images/movies/movie6.png" alt="/resources/images/ErrorWarning.png">
+                    `;
+                    break;
+                case 'keskiviikko': 
+                    contentDiv.innerHTML = `
+                    <img src="/resources/images/movies/movie3.png" alt="/resources/images/ErrorWarning.png">
+                    <img src="/resources/images/movies/movie2.png"  alt="/resources/images/ErrorWarning.png">
+                    <img src="/resources/images/movies/movie1.png" alt="/resources/images/ErrorWarning.png">
+                    `;
+                    break;
+                case 'torstai':
+                    contentDiv.innerHTML = `
+                    <img src="/resources/images/movies/movie6.png " alt="/resources/images/ErrorWarning.png">
+                    <img src="/resources/images/movies/movie4.png"  alt="/resources/images/ErrorWarning.png">
+                    <img src="/resources/images/movies/movie5.png" alt="/resources/images/ErrorWarning.png">
+                    `;
+                    break;
+                case 'perjantai':
+                    contentDiv.innerHTML = `
+                    <img src="/resources/images/movies/movie5.png" alt="/resources/images/ErrorWarning.png">
+                    <img src="/resources/images/movies/movie6.png"  alt="/resources/images/ErrorWarning.png">
+                    <img src="/resources/images/movies/movie4.png" alt="/resources/images/ErrorWarning.png">
+                    `;
+                    break;
+                case 'lauantai':
+                    contentDiv.innerHTML = `
+                    <img src="/resources/images/movies/movie4.png " alt="/resources/images/ErrorWarning.png">
+                    <img src="/resources/images/movies/movie5.png"  alt="/resources/images/ErrorWarning.png">
+                    <img src="/resources/images/movies/movie6.png" alt="/resources/images/ErrorWarning.png">
+                    `;
+                    break;
+                case 'sunnuntai':
+                  contentDiv.innerHTML = `
+                    <img src="/resources/images/movies/movie3.png" alt="/resources/images/ErrorWarning.png">
+                    <img src="/resources/images/movies/movie1.png"  alt="/resources/images/ErrorWarning.png">
+                    <img src="/resources/images/movies/movie2.png" alt="/resources/images/ErrorWarning.png">
+                    `;
+                    break;
+                default:
+                    contentDiv.innerHTML = '';
+            }
+        }
+
+
+  const canvas = document.getElementById("seatingCanvas");
+  const ctx = canvas.getContext("2d");
+
+  const rows = 8; // Istuimien rivien lukumäärä
+  const cols = 10; // Istuimien sarakkeiden lukumäärä
+  const seatWidth = 50; // Yksittäisen istuimen leveys pikseleinä
+  const seatHeight = 50; // Yksittäisen istuimen korkeus pikseleinä
+  const padding = 10; // Istuinten välinen etäisyys pikseleinä
+
+  // Alustetaan istuimet (false = vapaa, true = varattu)
+  const seats = Array.from({ length: rows }, () => Array(cols).fill(false));
+
+  // Kiinteiden punaisten istuinten koordinaatit
+  const fixedSeats = [
+    [0, 5], [4, 4], [7, 9], [3, 7], [1, 9], [1, 8] // Esimerkkikoordinaatit kiinteille punaisille istuimille
+  ];
+
+  // Funktio tarkistaa, onko istuin kiinteä punainen
+  function isFixed(row, col) {
+    return fixedSeats.some(([r, c]) => r === row && c === col);
+  }
+
+  // Piirtää istuinkartan
+  function drawSeats() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height); // Tyhjentää kanvaasin ennen uudelleenpiirtoa
+
+    for (let row = 0; row < rows; row++) {
+      for (let col = 0; col < cols; col++) {
+        const x = col * (seatWidth + padding) + padding; // Lasketaan istuimen x-koordinaatti
+        const y = row * (seatHeight + padding) + padding; // Lasketaan istuimen y-koordinaatti
+
+        // Valitaan istuimen väri sen tilan ja kiinteyden perusteella
+        if (isFixed(row, col)) {
+          ctx.fillStyle = "red"; // Kiinteät istuimet ovat aina punaisia
+        } else {
+          ctx.fillStyle = seats[row][col] ? "yellow" : "green"; // Varattu = keltainen, vapaa = vihreä
+        }
+
+        // Piirretään istuimen suorakulmio
+        ctx.fillRect(x, y, seatWidth, seatHeight);
+        ctx.strokeStyle = "#333"; // Istuimen reunuksen väri
+        ctx.strokeRect(x, y, seatWidth, seatHeight); // Piirretään reunus
+      }
+    }
+  }
+
+  // Käsittelee kanvaasiin kohdistuvat klikkaukset istuimen tilan muuttamiseksi
+  canvas.addEventListener("click", function (event) {
+    const x = event.offsetX; // Klikkauksen x-koordinaatti
+    const y = event.offsetY; // Klikkauksen y-koordinaatti
+
+    // Lasketaan klikkauksen perusteella, mihin istuimeen osuttiin
+    const col = Math.floor(x / (seatWidth + padding));
+    const row = Math.floor(y / (seatHeight + padding));
+
+    // Tarkistetaan, että klikkaus osuu istuinkartan sisään
+    if (row >= 0 && row < rows && col >= 0 && col < cols) {
+      // Muutetaan istuimen tilaa vain, jos se ei ole kiinteä punainen
+      if (!isFixed(row, col)) {
+        seats[row][col] = !seats[row][col]; // Vaihdetaan istuimen tila
+      }
+
+      drawSeats(); // Piirretään istuimet uudelleen päivitetyn tilan mukaan
+    }
+  });
+
+  // Piirtää istuimet ensimmäistä kertaa
+  drawSeats();
+</script>
+
 </body>
 </html>
