@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             const offsetPosition = elementPosition + window.pageYOffset - offset;
             window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
         }
-    }
+    }  
 
     // Näyttää top-navin aktiivisen sivun alleviivauksena
     const navLinks = document.querySelectorAll('.top-nav');

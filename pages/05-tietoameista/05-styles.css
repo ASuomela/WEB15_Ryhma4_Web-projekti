@@ -497,8 +497,9 @@ footer {
     background-color: #f5de8d; /* Esimerkkiväri */
     
 }
+/* Muutokset z-indeksiin */
 
-
-
-
+.top-nav-right {
+    position: relative;
+}
 
