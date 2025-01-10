@@ -43,19 +43,19 @@
                     </a>
                 
         <!--Top-navi-->
-                    <nav class="top-nav">
-                     <div class="top-nav-left">
-                        <a href="/pages/01-etusivu/etusivu.html" class="active">Etusivu</a>
-                        <a href="/pages/02-elokuvat/varaus.html">Elokuvat</a>
-                        <a href="/pages/03-elokuvawiki/elokuvawiki.html">Elokuvawiki</a>
-                        <a href="/pages/04-elokuvakerho/elokuvakerho.html">Elokuvakerho</a>
-                        <a href="/pages/05-tietoameista/tietoameista.html">Tietoa meistä</a>
-                     </div>
-                     <div class="top-nav-right">
-                        <input class="searchbar" type="text" placeholder="Haku sivulta..">
-                        <a href="/pages/06-rekisteroityminen/rekisteroityminen.html">Rekisteröidy</a>
-                    </div>
-                    </nav>
+        <nav class="top-nav">
+            <div class="top-nav-left">
+                <a href="/pages/01-etusivu/etusivu.html" class="nav-link">Etusivu</a>
+                <a href="/pages/02-elokuvat/varaus.html" class="nav-link">Elokuvat</a>
+                <a href="/pages/03-elokuvawiki/elokuvawiki.html" class="nav-link">Elokuvawiki</a>
+                <a href="/pages/04-elokuvakerho/elokuvakerho.html" class="nav-link">Elokuvakerho</a>
+                <a href="/pages/05-tietoameista/tietoameista.html" class="nav-link">Tietoa meistä</a>
+            </div>
+            <div class="top-nav-right">
+                <input class="nav-searchbar" type="text" id="nav-searchBar" placeholder="Haku sivulta.."><ul id="resultsList"></ul>
+                <a href="/pages/06-rekisteroityminen/rekisteroityminen.html" class="nav-link">Rekisteröidy</a>
+            </div>
+        </nav>
     </header>
 
     
@@ -66,7 +66,7 @@
                 
         <section class="about">
             <h1>Kalevala Kino</h1>
-            <div class="about-content">
+            <div class="about-content" id="about-content">
                 <p>
                     Tervetuloa Kalevala Kinoon! Olemme viihtyisä ja moderni elokuvateatteri, joka tarjoaa ensiluokkaisia elokuvaelämyksiä kaiken ikäisille. Meidän missionamme on tuoda uusimmat elokuvat ja klassikot meidän upeille ja yksilöllisille valkokankaille rentouttavassa ympäristössä.
                     <br>Pienet teatterisalimme luovat yksilöllisen kokemuksen ja jokainen löytää varmasti oman kivan salin siivittämään upeaan elokuvakokemukseen. Saliimme voit tilata leffaeväät ennakkoo ja meillä myös A-oikeudet.<br>Sijaitsemme keskeisellä paikalla, ja meille on helppo saapua niin julkisilla kuin omalla autolla, myös pyöräparkki löytyy ihan oven vierestä.
@@ -85,7 +85,7 @@
                 
 
         <section class="contact-info">
-                    <div class="address">
+                    <div class="address" id="address">
                         <h2>Yhteystiedot:</h2>
                         <p>OSOITE: Taitotalo, Valimotie 8<br>00380 Helsinki</p>
                         <p>info@4lpahdev.fi<br>Puh. 045 xxxxxxx</p>
@@ -218,7 +218,7 @@
         </section>
     </footer>
   
-    <!--JavaScript-->
+    <!--Otetaan yhteinen javascript käyttöön-->
   <script src="/resources/javascript/javascript-shared.js" defer></script>
   <script src="/pages/05-tietoameista/javascript-page-5.js" defer></script>
 
