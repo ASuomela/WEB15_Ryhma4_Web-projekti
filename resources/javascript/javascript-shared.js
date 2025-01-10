@@ -113,3 +113,4 @@ document.addEventListener("DOMContentLoaded", () => {
         slide.style.display = index === 0 ? "block" : "none";
     });
 });
+
