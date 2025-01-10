@@ -72,17 +72,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
         }
     }  
-
-    // Näyttää top-navin aktiivisen sivun alleviivauksena
-    const navLinks = document.querySelectorAll('.top-nav');
-    const currentPath = window.location.pathname;
-
-    navLinks.forEach(link => {
-        if (link.getAttribute('href') === currentPath) { // vertaa nykyistä sivua naviin
-            link.classList.add('active'); // lisää CSS-muotoilun aktiiviselle top-navin linkille
-        }
-    });
-});
+    
 
 // Kuvakaruselli-scripti
 
