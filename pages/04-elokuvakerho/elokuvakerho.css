@@ -1,13 +1,25 @@
 
 
 /* "Elokuvakerho"- otsikkoon lisää kokoa  */
-.kerho-otsikko {
-    font-size: 75px;
-    font-family: 'Pirata One', system-ui;
+.otsikko {
+    font-family: "Pirata One", system-ui;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
     color: #ffde9c;
+    margin-top: 10px;
 }
 
 /* bodytekstit kerhon esittelyosioon  */
+
+.esittely-otsikko p {
+    font-family: 'Roboto', 'sans-serif';
+    color: #ffde9c;
+    font-size: 20px;
+    font-weight:bold;
+}
+
 .esittely p {
     font-family: 'Roboto', 'sans-serif';
     color: whitesmoke;
