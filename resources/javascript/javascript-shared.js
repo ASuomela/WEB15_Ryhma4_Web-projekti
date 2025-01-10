@@ -9,9 +9,20 @@ document.addEventListener('DOMContentLoaded', (event) => {
             const results = [
                 // Etusivu
                 { name: 'Suosituimmat elokuvat', id: 'top-films-title', url: '/pages/01-etusivu/etusivu.html' },
-                { name: 'Ajankohtaista', id: 'news-title', url: '/pages/01-etusivu/etusivu.html' },           
+                { name: 'Ajankohtaista', id: 'news-title', url: '/pages/01-etusivu/etusivu.html' },
+                // Elokuvat
+                { name: 'Elokuvat ja näytökset', id: 'otsikko', url: '/pages/02-elokuvat/varaus.html' },
+                { name: 'Leffaeväät', id: 'leffaevaat', url: '/pages/02-elokuvat/varaus.html' },
                 // Elokuvawiki
                 { name: 'Elokuvawiki', id: 'movie-searchbar-container', url: '/pages/03-elokuvawiki/elokuvawiki.html' },
+                // Elokuvakerho
+                { name: 'Elokuvakerho', id: 'kerho-container', url: '/pages/04-elokuvakerho/elokuvakerho.html' },
+                { name: 'Elokuvaraati', id: 'elokuvaraati', url: '/pages/04-elokuvakerho/elokuvakerho.html' },
+                // Tietoa meistä
+                { name: 'Tietoa meistä', id: 'about-content', url: '/pages/05-tietoameista/tietoameista.html' },
+                { name: 'Yhteystiedot', id: 'address', url: '/pages/05-tietoameista/tietoameista.html' },
+                // Rekisteröidy
+                { name: 'Rekisteröidy', id: 'register-container', url: '/pages/06-rekisteroityminen/rekisteroityminen.html' },
                 /* Lisää omat sivut samaan tyyliin:
                 Name: miltä hakutulos näyttää
                 id: HTML koodista ID, mihin haluat että hakutulos vie
@@ -63,7 +74,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
 
     // Näyttää top-navin aktiivisen sivun alleviivauksena
-    const navLinks = document.querySelectorAll('.nav-link');
+    const navLinks = document.querySelectorAll('.top-nav');
     const currentPath = window.location.pathname;
 
     navLinks.forEach(link => {
