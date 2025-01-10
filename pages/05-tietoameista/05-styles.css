@@ -10,18 +10,6 @@ body {
     padding: 0;
 }
 
-/* Header */
-header {
-    position: fixed; /* Header pysyy kiinteänä scrollatessa */
-    top: 0;
-    width: 100%;
-    z-index: 100; /* Varmistetaan, että header pysyy aina päällä */
-    background-color: #282b58; /* Taustaväri headerille */
-    color: white;
-    padding: 10px 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Lisää hieman varjoa */
-}
-
 .hero img {
     display: block; /* Poistaa oletusarvoiset rivinvaihdot kuvan ympäriltä */
     margin: 0; /* Poistaa kaikki marginaalit */
@@ -47,7 +35,7 @@ header {
     font-weight: bold; /* Halutessasi voit myös säätää fontin paksuutta */
     text-align: center; /* Keskittää otsikon */
     letter-spacing: 5px; /* Lisää kirjainten väliä */
-    color: #f2d852; /* Vaihtoehtoisesti muuta tekstin väri */
+    color: #ffde9c; /* Vaihtoehtoisesti muuta tekstin väri */
     margin: 5px 0;   /* Ylä- ja alareunan marginaalit pieniksi (esim. 5px) */
 }
 
@@ -404,7 +392,7 @@ header {
     font-size: 4.5rem;
     letter-spacing: 5px; /* Lisää kirjainten väliä */
     margin-bottom: 20px;
-    color: #f2d852;
+    color: #ffde9c;
 }
 
 .carousel-container {
@@ -509,8 +497,9 @@ footer {
     background-color: #f5de8d; /* Esimerkkiväri */
     
 }
+/* Muutokset z-indeksiin */
 
-
-
-
+.top-nav-right {
+    position: relative;
+}
 
