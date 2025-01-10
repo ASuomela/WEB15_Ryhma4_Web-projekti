@@ -28,6 +28,11 @@ header {
     padding: 0; /* Poistaa mahdolliset tyhjät tilat */
     width: 100%; /* Varmistaa, että kuva täyttää koko alueen */
     height: 600px;
+    transition: filter 0.5s ease, transform 0.5s ease; /* Siirtymät mustavalkoiseen ja pienen zoomin */
+}
+.hero img:hover {
+    filter: grayscale(100%); /* Mustavalkoinen efekti */
+    transform: scale(1.05); /* Kevyt zoom-efekti */
 }
 
 .about {

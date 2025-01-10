@@ -90,10 +90,4 @@ body {
     .news {
         font-size: 6px;
     }
-
-}
-@media (max-width: 734px) {
-    .news-container {
-
-    }
 }
