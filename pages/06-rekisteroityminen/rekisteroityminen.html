@@ -38,20 +38,21 @@
                 </a>
             
     <!--Top-navi-->
-                <nav class="top-nav">
-                 <div class="top-nav-left">
-                    <a href="/pages/01-etusivu/etusivu.html" class="active">Etusivu</a>
-                    <a href="/pages/02-elokuvat/varaus.html">Elokuvat</a>
-                    <a href="/pages/03-elokuvawiki/elokuvawiki.html">Elokuvawiki</a>
-                    <a href="/pages/04-elokuvakerho/elokuvakerho.html">Elokuvakerho</a>
-                    <a href="/pages/05-tietoameista/tietoameista.html">Tietoa meistä</a>
-                 </div>
-                 <div class="top-nav-right">
-                    <input class="searchbar" type="text" placeholder="Haku sivulta..">
-                    <a href="/pages/06-rekisteroityminen/rekisteroityminen.html">Rekisteröidy</a>
-                </div>
-                </nav>
-        </header>
+    <nav class="top-nav">
+        <div class="top-nav-left">
+            <a href="/pages/01-etusivu/etusivu.html" class="nav-link">Etusivu</a>
+            <a href="/pages/02-elokuvat/varaus.html" class="nav-link">Elokuvat</a>
+            <a href="/pages/03-elokuvawiki/elokuvawiki.html" class="nav-link">Elokuvawiki</a>
+            <a href="/pages/04-elokuvakerho/elokuvakerho.html" class="nav-link">Elokuvakerho</a>
+            <a href="/pages/05-tietoameista/tietoameista.html" class="nav-link">Tietoa meistä</a>
+        </div>
+        <div class="top-nav-right">
+            <input class="nav-searchbar" type="text" id="nav-searchBar" placeholder="Haku sivulta.."><ul id="resultsList"></ul>
+            <a href="/pages/06-rekisteroityminen/rekisteroityminen.html" class="nav-link">Rekisteröidy</a>
+        </div>
+    </nav>
+</header>
+
 
     <main>
 
@@ -138,6 +139,9 @@
                 </div>
         </section>
     </footer>
+
+    <!--JavaScript-->
+    <script src="/resources/javascript/javascript-shared.js" defer></script>
     
     
 </body>
