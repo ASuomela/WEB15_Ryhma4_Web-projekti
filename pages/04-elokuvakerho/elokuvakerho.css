@@ -1,7 +1,7 @@
 
 /* bodyn muotoilut  */
 body {
- 
+    font-family: 'Roboto', sans-serif;
     display: flex;
     margin-left: 20px;
     margin-right: 20px;
@@ -12,8 +12,20 @@ body {
 }
 /* "Elokuvakerho"- otsikkoon lisää kokoa  */
 h3 {
-    font-size: 25px;
+    font-size: 75px;
+    font-family: 'Pirata One', system-ui;
+    color: #ffde9c;
 }
+
+/* bodytekstit kerhon esittelyosioon  */
+.esittely p {
+    font-family: 'Roboto', 'sans-serif';
+    color: whitesmoke;
+    font-size: 15px;
+}
+
+  
+
 
  
 
@@ -33,7 +45,7 @@ h3 {
 /* esittelytekstin koko ja asettelu containerissa */
 .kerho-container .esittely {
     
-    flex: 1;
+ 
     width: 50%;
     justify-content:center;
     align-items: center;
@@ -43,7 +55,7 @@ h3 {
  
 /* tästä alkaa pelkästään kuvasliderin muotoilut */
 .slider-wrapper {
-    flex: 2;
+  
     position: relative;
     max-width: 58rem;
     margin: 0;
@@ -108,6 +120,8 @@ h3 {
 .elokuvaraati h2 {
     font-size: 24px;
     margin-bottom: 20px;
+    color: #ffde9c;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* raatiosion tyylit */
@@ -131,15 +145,16 @@ h3 {
 .raati-jasen img {
     width: 100%;
     height: 100%;
-    border-radius: 50%;
-    max-width: 400px;
+    border-radius: 30%;
+    max-width: 600px;
     margin-bottom: 10px;
 }
 
 /* jäsenen esittelytekstin tyylit*/
 .raati-jasen p {
-    font-size: 20px;
-    color: #fff;
+    font-family: 'Roboto', 'sans-serif';
+    color: whitesmoke;
+    font-size: 15px;
 }
 
 
