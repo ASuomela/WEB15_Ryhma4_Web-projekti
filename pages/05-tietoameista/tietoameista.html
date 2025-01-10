@@ -9,9 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-    <link rel="stylesheet" href="styles.css"> <!-- Tyylitiedosto paikallinen -->
     <link rel="stylesheet" href="/resources/css/styles.css">
+    <link rel="stylesheet" href="05-styles.css"> <!-- Tyylitiedosto paikallinen -->
+   
+    <link rel="apple-touch-icon" sizes="180x180" href="/resources/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/resources/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/resources/favicon-16x16.png">
+    <link rel="manifest" href="/resources/site.webmanifest">      
+   
 </head>
 
 <body>
@@ -51,28 +56,34 @@
                         <a href="/pages/06-rekisteroityminen/rekisteroityminen.html">Rekisteröidy</a>
                     </div>
                     </nav>
-            </header>
+    </header>
 
-            <main>
-                <section class="hero">
-                    <img src="kuvat/Kauhu3.png">
-                </section>
+    
+        <section class="hero">
+            <img src="kuvat/Kauhu3.png">
+        </section>
                 
-                <section class="about">
-                    <h1>Kalevala Kino</h1>
-                    <div class="about-content">
-                        <p>
-                            Tervetuloa Kalevala Kinoon! Olemme viihtyisä ja moderni elokuvateatteri, joka tarjoaa ensiluokkaisia elokuvaelämyksiä kaiken ikäisille. Meidän missionamme on tuoda uusimmat elokuvat ja klassikot suurelle valkokankaalle rentouttavassa ympäristössä.
-        
-                            Sijaitsemme keskeisellä paikalla, ja meille on helppo saapua niin julkisilla kuin omalla autolla.
-                        </p>
-                        <a href="/pages/02-elokuvat/varaus.html">
-                        <button>Osta liput</button>
-                        </a>
-                    </div>
-                </section>           
+        <section class="about">
+            <h1>Kalevala Kino</h1>
+            <div class="about-content">
+                <p>
+                    Tervetuloa Kalevala Kinoon! Olemme viihtyisä ja moderni elokuvateatteri, joka tarjoaa ensiluokkaisia elokuvaelämyksiä kaiken ikäisille. Meidän missionamme on tuoda uusimmat elokuvat ja klassikot meidän upeille ja yksilöllisille valkokankaille rentouttavassa ympäristössä.
+                    <br>Pienet teatterisalimme luovat yksilöllisen kokemuksen ja jokainen löytää varmasti oman kivan salin siivittämään upeaan elokuvakokemukseen. Saliimme voit tilata leffaeväät ennakkoo ja meillä myös A-oikeudet.<br>Sijaitsemme keskeisellä paikalla, ja meille on helppo saapua niin julkisilla kuin omalla autolla, myös pyöräparkki löytyy ihan oven vierestä.
+                </p>
+                <a href="/pages/02-elokuvat/varaus.html" class="button">Osta liput</a>
 
-                <section class="contact-info">
+                    </div>
+                    <!-- Teatterikuvat -->
+                    <div class="theatre">
+                        <img src="/pages/05-tietoameista/kuvat/Teatterikuva_1.png" alt="Teatterikuva 1">
+                        <img src="/pages/05-tietoameista/kuvat/Teatterikuva_2.png" alt="Teatterikuva 2">
+                        <img src="/pages/05-tietoameista/kuvat/Teatterikuva_3.png" alt="Teatterikuva 3">
+                        <img src="/pages/05-tietoameista/kuvat/Teatterikuva_4.png" alt="Teatterikuva 4">
+                    </div>
+        </section>
+                
+
+        <section class="contact-info">
                     <div class="address">
                         <h2>Yhteystiedot:</h2>
                         <p>OSOITE: Taitotalo, Valimotie 8<br>00380 Helsinki</p>
@@ -100,15 +111,16 @@
                                 width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
                     </div>
-                </section>
+        </section>
                 
                 
-                <section class="movies">
+        <section class="movies">
                     <h2>Ohjelmistossa nyt:</h2>
                     <div class="movie-grid">
                         <!-- Esimerkki yhdestä elokuvasta -->
                         <div class="movie-card">
                             <img src="kuvat/movie5.png" width="80%" height="85%" alt="Somme">
+                            <button class="movie-button" onclick="window.location.href='/pages/01-etusivu/etusivu.html'">Varaa liput</button>
                             <h3>The Battle of the Somme</h3>
                             <p>Genre: Horror</p>
                             <span class="tag">Uutta tuotantoa ohjaajalegenda Alfred Hichcockilta.</span>
@@ -116,6 +128,7 @@
                         <!-- Elokuvakortti 2-->
                         <div class="movie-card">
                             <img src="kuvat/movie3.png" width="80%" height="85%" alt="The Sea">
+                            <button class="movie-button" onclick="window.location.href='/pages/01-etusivu/etusivu.html'">Varaa liput</button>
                             <h3>The Sea</h3>
                             <p>Genre: Action</p>
                             <span class="tag">Uutta tuotantoa Renny Harlinilta</span>
@@ -123,59 +136,90 @@
                         <!-- Elokuvakortti 3-->
                         <div class="movie-card">
                             <img src="kuvat/movie4.png" width="80%" height="85%" alt="The Swords">
+                            <button class="movie-button" onclick="window.location.href='/pages/01-etusivu/etusivu.html'">Varaa liput</button>
                             <h3>The Swords</h3>
                             <p>Genre: Action</p>
                             <span class="tag">New Release</span>
                         </div>
                     </div>
-                </section>
-
-            
-            <section class="footer-content-section">
-                <div class="container">
-                    <div class="footer-content">
-                        <!-- Yhteystiedot -->
-                        <div class="footer-contact">
-                            <h3>Yhteystiedot:</h3>
-                            <p>Käyntiosoite:<br> Taitotalo, Valimotie 8<br> 00380 Helsinki</p>
-                            <p>info@4lpahdev.fi<br> Puh. 045 xxxxxxx</p>
-                            <p>Teatteri ja baari avoinna:<br> Ma-to 16-22<br> Pe 16-22<br> La 11-24<br> Su 12-21</p>
-                            <p>Teatteripäällikkö Henkka Hellsten<br> Arkisin klo 10-16: 045-xxxxxx</p>
-                        </div>
-                        <!-- Logo -->
-                        <div class="footer-logo">
-                            <img src="kuvat/LOGO-kalevala-pieni.png" alt="Kalevala Kino logo">
-                        </div>
-                        <!-- Uutiskirje ja some -->
-                        <div class="footer-news-social">
-                            <h3>Tilaa uutiskirje</h3>
-                            <input type="email" placeholder="Syötä sähköpostiosoite">
-                            <button>Lähetä</button>
-
-                            <h3>Löydät meidät somesta</h3>
-                            <div class="social-icons">
-                                <a href="#"><img src="kuvat/insta.png" alt="TikTok"></a>
-                                <a href="#"><img src="kuvat/Face.png" alt="Instagram"></a>
-                                <a href="#"><img src="kuvat/linkein.png" alt="Facebook"></a>
-                                <a href="#"><img src="kuvat/youtube.png" alt="YouTube"></a>
+        </section>            
+        <section class="food-carousel">
+                        <h2>Valitse ateria:</h2>
+                        <div class="carousel-container">
+                            <button class="carousel-btn prev-btn" onclick="changeSlide(-1)">&#10094;</button>
+                            <div class="carousel-slides">
+                                <!-- Ateriavaihtoehto 1 -->
+                                <div class="slide">
+                                    <img src="kuvat/Popcorn.jpg" alt="Ateria 1">
+                                    <h3>Pockorn pesä</h3>
+                                    <p>Hinta: 10,50€</p>
+                                    <button class="reserve-btn" onclick="reserveMeal('Pockorn pesä')">Varaa</button>
+                                </div>
+                                <!-- Ateriavaihtoehto 2 -->
+                                <div class="slide">
+                                    <img src="kuvat/snack.jpg" alt="Ateria 2">
+                                    <h3>Snacki combo</h3>
+                                    <p>Hinta: 18,00€</p>
+                                    <button class="reserve-btn" onclick="reserveMeal('Snacki combo')">Varaa</button>
+                                </div>
+                                <!-- Ateriavaihtoehto 3 -->
+                                <div class="slide">
+                                    <img src="kuvat/drink.jpg" alt="Ateria 3">
+                                    <h3>Cocktail kokoelma</h3>
+                                    <p>Hinta: 12,00€</p>
+                                    <button class="reserve-btn" onclick="reserveMeal('Cocktail kokoelma')">Varaa</button>
+                                </div>
                             </div>
+                            <button class="carousel-btn next-btn" onclick="changeSlide(1)">&#10095;</button>
+                        </div>
+            </section>
+                    
+            
+      <!--Footer-->
+      <footer>
+        <section class="footer-content-section">
+            <div class="container">
+                <div class="footer-content">
+                    <!-- Yhteystiedot -->
+                    <div class="footer-contact">
+                        <h3>Yhteystiedot:</h3>
+                        <p>Käyntiosoite:<br><br> Taitotalo, Valimotie 8<br> 00380 Helsinki</p>
+                        <p>info@4lphadev.fi<br> Puh. 045 xxxxxxx</p>
+                        <p>Teatteri ja baari avoinna:<br><br> Ma-to 16-22<br> Pe 16-22<br> La 11-24<br> Su 12-21</p>
+                        <p>Teatteripäällikkö Henkka Hellsten<br> Arkisin klo 10-16: 045-xxxxxx</p>
+                    </div>
+                    <!-- Logo -->
+                    <div class="footer-logo">
+                        <img src="/resources/images/LOGO-Kalevala-Engrave-modified.png" alt="Kalevala Kino logo" width="75%" height="75%">
+                    </div>
+                    <!-- Uutiskirje ja some -->
+                    <div class="footer-news-social">
+                        <h3>Tilaa uutiskirje</h3>
+                        <input type="email" placeholder="Syötä sähköpostiosoite">
+                        <button>Lähetä</button>
+
+                        <h3>Löydät meidät somesta</h3>
+                        <div class="social-icons">
+                            <a href="#"><img src="/resources/images/instagram.png" alt="Instagram"></a>
+                            <a href="#"><img src="/resources/images/facebook.png" alt="Facebook"></a>
+                            <a href="#"><img src="/resources/images/linkedin.png" alt="LinkedIn"></a>
+                            <a href="#"><img src="/resources/images/youtube.png" alt="YouTube"></a>
+                            <a href="#"><img src="/resources/images/tiktok.png" alt="TikTok"></a>
+                            <a href="#"><img src="/resources/images/pinterest.png" alt="Pinterest"></a>
                         </div>
                     </div>
                 </div>
-            </section>   
-          
-        
-
-
-
-
-</main>    
-
-<!-- Footer -->
-<footer class="footer">
-    <p>© 2022 Kalevala Kino. All Rights Reserved.</p>
-    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
-</footer>
+            </div>
+            <div class="copyright">
+                <p>© 2024 Kalevala Kino. All Rights Reserved.</p>
+                <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+                </div>
+        </section>
+    </footer>
+  
+    <!--JavaScript-->
+  <script src="/resources/javascript/javascript-shared.js" defer></script>
+  <script src="/pages/05-tietoameista/javascript-page-5.js" defer></script>
 
    
 </body>

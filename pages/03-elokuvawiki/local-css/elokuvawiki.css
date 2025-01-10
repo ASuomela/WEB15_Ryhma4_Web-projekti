@@ -1,10 +1,5 @@
 /* Tänne paikalliset CSS, kirjastot/framet/yhteinen CSS -> resources/css */
 
-/* Otetaan engravers-old-english -fontti käyttöön */
-@font-face {
-    src: url(/resources/fonts/OPTIEngraversOldEnglish.otf);
-    font-family: "OPTIEngraversOldEnglish";
-}
 
 /* Bodyn muotoilut */
 body {
@@ -78,6 +73,7 @@ body {
     border-radius: 24px;
     padding: 5%;
     padding-bottom: 10%;
+}
 .search-result {
     display: flex;
     justify-content: space-between;
@@ -86,15 +82,18 @@ body {
 .search-result-title {
     color: whitesmoke;
     margin-left: 10%;
-    margin-bottom: 2%;
     font-size: 24px;
 }
 .search-result-image {
     margin-right: 2%;
     margin-left: 10%;
+    margin-top: 1%;
+    background-color: black;
 }
 .search-result-text {
     color: whitesmoke;
     margin-left: 2%;
     margin-right: 10%;
+    margin-top: 0.7%;
+    font-size: 18px;
 }

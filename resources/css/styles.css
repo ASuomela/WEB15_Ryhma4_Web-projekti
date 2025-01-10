@@ -1,3 +1,14 @@
+/* Headerin muotoilut */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #14162e;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
 /* Headerin ikonit ja logot */
 .menu-icon {
     background: url(/resources/images/menu-icon-gold.png) no-repeat center center;
@@ -14,20 +25,11 @@
     width: 100px;
     display: flex;
     justify-content: flex-start;
-    margin-right: auto;
+    align-items: flex-start;
     margin-left: 20px;
 }
 
-/* Luodaan flexboxit headerille */
-.main-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #14162e;
-    padding: 5px;
-    position: sticky;
-    top: 0;
-}
+/* Top-navin muotoilut */
 .top-nav {
     flex: 1;
     display: flex;
@@ -93,7 +95,7 @@
 /* Side-navin napin väri vaihtuu, kun valikko on auki */
 .side-nav:hover .dropbtn {background-color: #847f56;}
 
-/* Top navin muotoilut */
+/* Top-navin muotoilut */
 .top-nav a {
     font-family: 'Roboto', sans-serif;
     color:#ffde9c;
@@ -101,12 +103,22 @@
     text-decoration: none;
     font-size: 20px;
 }
-/* Piilottaa nav barin kun näytön koko < 600px */
-@media (max-width: 600px) {
+/* Top-navin aktiivisen sivun alleviivaus (js) */
+.nav-link.active {
+    text-decoration: underline;
+    color: whitesmoke;
+}
+
+/* Piilottaa nav barin kun näytön leveys < 1472px */
+@media (max-width: 1472px) {
     .top-nav {
         display: none;
     }
+    .main-header {
+        justify-content: flex-start; /* Pidetään logo vasemmalla */
+    }
 }
+
 /*Napit vaihtaa väriä kun hoveraa*/
 .top-nav a:hover {
     background-color: #426754;
@@ -250,7 +262,9 @@ body {
 }
 .copyright {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 /* Responsiivisuus */
@@ -266,9 +280,14 @@ body {
     
     footer, footer * {
         font-family: "Roboto", system-ui;
-        color: #fdd688 !important; /* Varmista värin soveltuminen */
+        color: whitesmoke; /* Varmista värin soveltuminen */
     }
-    
+    .footer-news-social button {
+        color: #000;
+    }
+    .footer-news-social input {
+        color: #000;
+    }
 
 
 }
