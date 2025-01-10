@@ -5,6 +5,9 @@ body {
     padding: 0;
     color: #fff;
     background-color: #14162e;
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 /* Header */
@@ -39,16 +42,37 @@ header {
     font-weight: bold; /* Halutessasi voit myös säätää fontin paksuutta */
     text-align: center; /* Keskittää otsikon */
     letter-spacing: 5px; /* Lisää kirjainten väliä */
-    color: #fffbfb; /* Vaihtoehtoisesti muuta tekstin väri */
+    color: #f2d852; /* Vaihtoehtoisesti muuta tekstin väri */
     margin: 5px 0;   /* Ylä- ja alareunan marginaalit pieniksi (esim. 5px) */
 }
 
 
 .about p {
-    margin: 5px 0; /* Poistaa ylimääräiset marginaalit kappaleesta */
+    /* margin: 5px 0; Poistaa ylimääräiset marginaalit kappaleesta */
     padding-top: 10px; /* Lisää hieman väliä otsikon ja tekstin väliin */
     font-size: large;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin: 0 auto;
+    max-width: 800px; /* Rajoittaa tekstin leveyden */
 }
+.button {
+    display: inline-block;
+    background-color: #f2d852;
+    color: #000;
+    text-decoration: none; /* Poistaa alleviivauksen */
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #9bcfb8;
+}
+
 
 
 .about-content {
@@ -451,7 +475,7 @@ header {
 }
 
 .reserve-btn:hover {
-    background-color: #282b58;
+    background-color: #f2d852;
     color: #fff;
 }
 
