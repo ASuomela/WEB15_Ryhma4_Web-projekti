@@ -10,18 +10,6 @@ body {
     padding: 0;
 }
 
-/* Header */
-header {
-    position: fixed; /* Header pysyy kiinteänä scrollatessa */
-    top: 0;
-    width: 100%;
-    z-index: 100; /* Varmistetaan, että header pysyy aina päällä */
-    background-color: #282b58; /* Taustaväri headerille */
-    color: white;
-    padding: 10px 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Lisää hieman varjoa */
-}
-
 .hero img {
     display: block; /* Poistaa oletusarvoiset rivinvaihdot kuvan ympäriltä */
     margin: 0; /* Poistaa kaikki marginaalit */
@@ -509,8 +497,9 @@ footer {
     background-color: #f5de8d; /* Esimerkkiväri */
     
 }
+/* Muutokset z-indeksiin */
 
-
-
-
+.top-nav-right {
+    position: relative;
+}
 

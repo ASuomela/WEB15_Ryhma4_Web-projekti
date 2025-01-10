@@ -156,7 +156,7 @@
 }
 #resultsList li:hover {
     background-color:#426754;
-
+    color: #ffffff
 }
 /*Sana korostuu sivulla kun etsii headerin hakukentästä*/
 .highlight {
