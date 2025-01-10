@@ -1,14 +1,4 @@
 /* Perustyylit */
-body {
-    font-family:  "Roboto", system-ui;
-    margin: 0;
-    padding: 0;
-    color: #fff;
-    background-color: #14162e;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
 
 .hero img {
     display: block; /* Poistaa oletusarvoiset rivinvaihdot kuvan ympäriltä */
