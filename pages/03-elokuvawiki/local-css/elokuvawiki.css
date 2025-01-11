@@ -97,3 +97,63 @@ body {
     margin-top: 0.7%;
     font-size: 18px;
 }
+
+/* Responsiivisuus */
+
+@media (max-width: 734px){
+    .elokuvawiki-title h1 {
+        font-size: 36px;
+    }
+    .movie-searchbar-title h1 {
+        font-size: 24px;
+    }
+    .movie-searchbar-container {
+        width: 90%;
+        align-items: center;
+        margin: auto;
+    }
+    .search-result-title h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+    .search-result-title {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .search-result-container {
+        width: 90%;
+        display: flex;
+        flex-direction: column; /* Kuva-asettelu päällekkäin */
+        align-items: center; /* Keskittää kuvat (korjattu) */
+        justify-content: center; /* Keskittää vaakasuunnassa */
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+        box-sizing: border-box;
+    }
+    .search-result {
+        width: 90%;
+        display: flex;
+        flex-direction: column; /* Kuva-asettelu päällekkäin */
+        align-items: center; /* Keskittää kuvat (korjattu) */
+        justify-content: center; /* Keskittää vaakasuunnassa */
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+        box-sizing: border-box;
+    }
+    .search-result img {
+        width: 100%; /* Asetetaan kuvan leveys 100% */
+        max-width: 300px; /* Maksimileveys kuvalle */
+        margin-bottom: 5%; /* Välit kuville */
+        margin-left: auto; /* Keskitetään kuva */
+        margin-right: auto; /* Keskitetään kuva */
+    }
+    .search-result-text {
+        text-align: center; /* Keskitetään teksti */
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+
+    }
+}

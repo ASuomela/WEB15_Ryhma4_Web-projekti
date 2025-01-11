@@ -1,15 +1,5 @@
 /* Tänne paikalliset CSS, kirjastot/framet/yhteinen CSS -> resources/css */
 
-/* Bodyn muotoilut */
-body {
-    font-family: 'Roboto', sans-serif;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-color: #282B59;
-    margin: 0px;
-    padding: 0px;
-}
 /*Tervetuloa-title*/
 .tervetuloa-title {
     font-family: "Pirata One", system-ui;
@@ -31,21 +21,18 @@ body {
     display: flex;
     transition: transform 0.5s ease-in-out;
     margin-left: 10%;
-    flex-grow: 0;
 }
 
 .top-films-container {
     display: flex;
     flex-direction: column;
     align-items: left;
-    flex-grow: 0;
     background-color: #14162e;
     padding: 2%;
     padding-bottom: 5%;
     margin-left: 1%;
     margin-right: 1%;
     border-radius: 24px;
-    
 }
 
 /* "Ajankohtaista" */
@@ -84,22 +71,64 @@ body {
 /*Responsiivisuus*/
 
 @media (max-width: 734px) {
-    .tervetuloa-title {
-        font-size: 24px;
+    .tervetuloa-title h1 {
+        font-size: 36px;
+    }
+    .top-films {
+        display: flex;
+        flex-direction: column; /* Kuva-asettelu päällekkäin */
+        align-items: center; /* Keskittää kuvat */
+        justify-content: center; /* Keskittää vaakasuunnassa */
+        margin-left: 10%; /* Keskittää elementin */
+        padding: 2%; /* Poistetaan ylimääräinen padding */
+        padding-left: 3%;
+        width: 100%; /* Varmistetaan, että täyttää koko leveyden */
+        box-sizing: border-box;
+    }
+    .top-films img {
+        width: 100%; /* Asettaa kuvan leveydeksi 100% */
+        max-width: 300px; /* Maksimileveys kuvalle */
+        margin-bottom: 10px; /* Välit kuville */
+        margin-left: auto;
+        margin-right: auto;
     }
     .top-films-title {
-        font-size: 12px;
-    }
-    .news-title {
-        font-size: 12px;
+        text-align: center;
+        margin-left: 0;
     }
     .news {
-        font-size: 6px;
+        display: flex;
+        flex-direction: column; /* Kuva-asettelu päällekkäin */
+        align-items: center; /* Keskittää kuvat */
+        justify-content: center; /* Keskittää vaakasuunnassa */
+        margin: 0 auto; /* Keskittää elementin */
+        padding: 0; /* Poistetaan ylimääräinen padding */
+    }
+    .news img {
+        width: 100%; /* Asettaa kuvan leveydeksi 100% */
+        max-width: 300px; /* Maksimileveys kuvalle */
+        margin-bottom: 10px; /* Välit kuville */
+    }
+    .news h2 {
+        font-size: 14px;
+        text-align: center;
+    }
+    .news-title {
+        text-align: center;
+        margin-left: 0;
     }
     .carousel-btn {
         display: none;
     }
+    .top-films-container, .news-container {
+        margin: 0 auto; /* Keskitetään vaakasuunnassa */
+        padding: 0; /* Poistetaan ylimääräinen padding */
+        padding-bottom: 5%;
+        margin-bottom: 5%;
+        width: 90%; /* Rajoitetaan leveyttä */
+    }
 }
+
 
 /* Suosituimmat elokuvat -kuvakaruselli */
 
