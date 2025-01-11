@@ -41,7 +41,6 @@
 
 /* esittelytekstin koko ja asettelu containerissa */
 .kerho-container .esittely {
-    
     flex: 1;
     width: 30%;
     justify-content:center;
@@ -52,7 +51,6 @@
  
 /* tästä alkaa pelkästään kuvasliderin muotoilut */
 .slider-wrapper {
-  
     position: relative;
     max-width: 58rem;
     margin: 0;
@@ -131,8 +129,6 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
-
 }
  
 /* jokaiselle jäsenelle varatun tilan tyylit*/
@@ -160,5 +156,42 @@
     font-size: 15px;
 }
 
+/* Responsiivisuus */
 
+@media (max-width: 734px) {
+    .otsikko h1 {
+        font-size: 48px;
+    }
+    .kerho-container {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+        padding: 0 auto;
+    }
+    .kerho-container .esittely {
+        width: 100%;
+    }
+    .kerho-container p {
+        text-align: center;
+    }
+    .esittely {
+        display: flex;
+        width: 100%;
+    }
+    .slider-wrapper {
+        width: 100%;
+    }
+    .elokuvaraati {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .raati-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
 
