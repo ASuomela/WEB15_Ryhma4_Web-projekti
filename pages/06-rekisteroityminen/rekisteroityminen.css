@@ -2,7 +2,7 @@
 main {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   justify-content: center;
   align-items: center;
   padding: 10px;
@@ -117,13 +117,19 @@ form .button input:hover {
 }
 
 /* RESPONSIIVISUUTTA TÄLLÄ */
-@media (max-width: 584px) {
-  .container{
-    max-width: 100%;
+@media (max-width: 734px) {
+
+  .register-container{
+    width: 70%;
+    display: flex;
+    margin-top: 20%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
   form .user-details .input-box {
     margin-bottom: 15px;
-    width: 100%;
+    width: 90%;
   }
   .container form .user-details{
     max-height: 300px;
@@ -131,6 +137,9 @@ form .button input:hover {
   }
   .user-details::-webkit-scrollbar{
     width: 0;
+  }
+  .container-signin {
+    margin-bottom: 10%;
   }
 }
 
