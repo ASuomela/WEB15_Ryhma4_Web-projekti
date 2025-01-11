@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 Name: miltä hakutulos näyttää
                 id: HTML koodista ID, mihin haluat että hakutulos vie
                 url: millä sivulla kyseinen hakutulos on */
-            ];
+        ];
 
             const filteredResults = results.filter(result => result.name.toLowerCase().includes(query));
 
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
         }
     }  
-    
+});
 
 // Kuvakaruselli-scripti
 
@@ -103,4 +103,3 @@ document.addEventListener("DOMContentLoaded", () => {
         slide.style.display = index === 0 ? "block" : "none";
     });
 });
-
