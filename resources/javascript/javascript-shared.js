@@ -74,6 +74,18 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }  
 });
 
+// Aktiivinen sivu näkyy navigaatiopalkissa alleviivattuna (+ CSS-muotoilu.)
+
+document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('.top-nav a');
+    
+    navLinks.forEach(link => {
+        if (link.href === window.location.href) {
+            link.classList.add('active');
+        }
+    });
+});
+
 // Kuvakaruselli-scripti
 
 let currentSlide = 0;

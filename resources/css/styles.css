@@ -45,6 +45,12 @@
     margin-left: auto;
 }
 
+/* Aktiivinen sivu näkyy alleviivattuna navigaatiopalkissa (+ JS-scripti) */
+.top-nav a.active {
+    text-decoration: underline;
+    color: whitesmoke;
+}
+
 /* Muotoilut side-navin napille */
 .dropbtn {
     background-color: #14162e;
@@ -103,11 +109,6 @@
     padding: 40px;
     text-decoration: none;
     font-size: 20px;
-}
-/* Top-navin aktiivisen sivun alleviivaus (js) */
-.nav-link.active {
-    text-decoration: underline;
-    color: whitesmoke;
 }
 
 /* Piilottaa nav barin kun näytön leveys < 1472px */
