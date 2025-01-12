@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalevala Kino - Etusivu</title>
+    <link rel="stylesheet" href="/resources/css/styles.css">
+    <link rel="stylesheet" href="local-css/etusivu.css">
+    <!--Google Fonts: Pirata One ja Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!--Favicon iconi selaimeen-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/resources/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/resources/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/resources/favicon-16x16.png">
+    <link rel="manifest" href="/resources/site.webmanifest">      
+
+</head>
+
+<body>
+
+    <header class="main-header">
+
+        <!--Side-navi-->
+        <nav class="side-nav">
+            <button class="dropbtn"><i class="menu-icon"></i></button>
+            <div class="side-nav-content">
+                <a href="/pages/01-etusivu/etusivu.html">Etusivu</a>
+                <a href="/pages/02-elokuvat/varaus.html">Elokuvat</a>
+                <a href="/pages/03-elokuvawiki/elokuvawiki.html">Elokuvawiki</a>
+                <a href="/pages/04-elokuvakerho/elokuvakerho.html">Elokuvakerho</a>
+                <a href="/pages/05-tietoameista/tietoameista.html">Tietoa meistä</a>
+                <a href="/pages/06-rekisteroityminen/rekisteroityminen.html">Rekisteröidy</a>
+            </div>
+        </nav>
+
+        <!--Headerin logo-->
+        <a href="/pages/01-etusivu/etusivu.html">
+            <div class="container-logo-header">
+                <i class="logo-header"></i>
+            </div>
+        </a>
+        
+        <!--Top-navi-->
+        <nav class="top-nav">
+            <div class="top-nav-left">
+                <a href="/pages/01-etusivu/etusivu.html" class="nav-link">Etusivu</a>
+                <a href="/pages/02-elokuvat/varaus.html" class="nav-link">Elokuvat</a>
+                <a href="/pages/03-elokuvawiki/elokuvawiki.html" class="nav-link">Elokuvawiki</a>
+                <a href="/pages/04-elokuvakerho/elokuvakerho.html" class="nav-link">Elokuvakerho</a>
+                <a href="/pages/05-tietoameista/tietoameista.html" class="nav-link">Tietoa meistä</a>
+            </div>
+            <div class="top-nav-right">
+                <input class="nav-searchbar" type="text" id="nav-searchBar" placeholder="Haku sivulta.."><ul id="resultsList"></ul>
+                <a href="/pages/06-rekisteroityminen/rekisteroityminen.html" class="nav-link">Rekisteröidy</a>
+            </div>
+        </nav>
+    </header>
+
+    <!--Sisältö-->
+    <section id="content">
+        <div class="tervetuloa-title" id="tervetuloa-title">
+            <h1>Tervetuloa Kalevala Kinoon!</h1>
+        </div>
+        <div class="top-films-container">
+            <div class="top-films-title" id="top-films-title">
+            <h1>Suosituimmat elokuvat</h1>
+            </div>
+            <div class="top-films">
+            <div class="slide">
+            <img src="/resources/images/movies/movie1.png" width="16%" alt="movie1">
+            <img src="/resources/images/movies/movie2.png" width="16%" alt="movie2">
+            <img src="/resources/images/movies/movie3.png" width="16%" alt="movie3">
+            <img src="/resources/images/movies/movie4.png" width="16%" alt="movie4">
+            <img src="/resources/images/movies/movie5.png" width="16%" alt="movie5">
+            <img src="/resources/images/movies/movie6.png" width="16%" alt="movie6">
+            </div>
+            </div>
+            <button class="carousel-btn prev-btn" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="carousel-btn next-btn" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+        <div class="news-container">
+            <div class="news-title" id="news-title">
+            <h1>Ajankohtaista</h1>
+            </div>
+            <div class="news">
+                <div class="news-pictures1">
+                    <img src="/resources/images/events/event1.png" width="80%" alt="event1">
+                    <h2>Koe hyytäviä hetkiä Halloween tapahtumassa!</h2>
+                </div>
+                <div class="news-pictures2">
+                    <img src="/resources/images/events/event2.png" width="80%" alt="event2">
+                    <h2>Tule ohjaamaan ja suunnittelemaan elokuvia!</h2>
+                </div>
+                <div class="news-pictures3">
+                    <img src="/resources/images/events/event3.png" width="80%" alt="event3">
+                    <h2>Kalevalakinon ulkoilmaelokuvat 2025 kesällä</h2>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--Footer-->
+    <footer>
+        <section class="footer-content-section">
+            <div class="container">
+                <div class="footer-content">
+                    <!-- Yhteystiedot -->
+                    <div class="footer-contact">
+                        <h3>Yhteystiedot:</h3>
+                        <p>Käyntiosoite:<br><br> Taitotalo, Valimotie 8<br> 00380 Helsinki</p>
+                        <p>info@4lphadev.fi<br> Puh. 045 xxxxxxx</p>
+                        <p>Teatteri ja baari avoinna:<br><br> Ma-to 16-22<br> Pe 16-22<br> La 11-24<br> Su 12-21</p>
+                        <p>Teatteripäällikkö Henkka Hellsten<br> Arkisin klo 10-16: 045-xxxxxx</p>
+                    </div>
+                    <!-- Logo -->
+                    <div class="footer-logo">
+                        <img src="/resources/images/LOGO-Kalevala-Engrave-modified.png" alt="Kalevala Kino logo" width="75%" height="75%">
+                    </div>
+                    <!-- Uutiskirje ja some -->
+                    <div class="footer-news-social">
+                        <h3>Tilaa uutiskirje</h3>
+                        <input type="email" placeholder="Syötä sähköpostiosoite">
+                        <button>Lähetä</button>
+
+                        <h3>Löydät meidät somesta</h3>
+                        <div class="social-icons">
+                            <a href="#"><img src="/resources/images/instagram.png" alt="Instagram"></a>
+                            <a href="#"><img src="/resources/images/facebook.png" alt="Facebook"></a>
+                            <a href="#"><img src="/resources/images/linkedin.png" alt="LinkedIn"></a>
+                            <a href="#"><img src="/resources/images/youtube.png" alt="YouTube"></a>
+                            <a href="#"><img src="/resources/images/tiktok.png" alt="TikTok"></a>
+                            <a href="#"><img src="/resources/images/pinterest.png" alt="Pinterest"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2024 Kalevala Kino. All Rights Reserved.</p>
+                <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+                </div>
+        </section>
+    </footer>
+
+    <!--JavaScript-->
+    <script src="/resources/javascript/javascript-shared.js" defer></script>
+
+</body>
+</html>
