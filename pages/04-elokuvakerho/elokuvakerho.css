@@ -20,6 +20,7 @@
     font-weight:bold;
 }
 
+/* muotoilut kerhon esittelytekstiin  */
 .esittely p {
     font-family: 'Roboto', 'sans-serif';
     color: whitesmoke;
@@ -50,16 +51,18 @@
 }
  
 /* tästä alkaa pelkästään kuvasliderin muotoilut */
+
+
 .slider-wrapper {
     position: relative;
     max-width: 58rem;
-    margin: 0;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 /*määrittelee tarkemminn sliderin toiminnallisuudet*/
 .slider {
     display: flex;
-    justify-content: center;
     aspect-ratio: 16 / 9;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -90,7 +93,7 @@
 
 /* sliderin tekstin muotoilut */
 .slider-nav a {
-    position: relative;
+ 
     z-index: 1;
     width: 1rem;
     height: 1rem;
@@ -116,9 +119,10 @@
     border-radius: 24px;
 }
 
-/* Jäsenien kuvile hoverit */
+/* Jäsenien kuville hoverit */
 .elokuvaraati img:hover {
-    transform: scale(1.15);
+    transform: scale(1.5);
+    transition: .3s ease-in-out;
 }
 
 /* otsikko*/
