@@ -12,7 +12,7 @@
 
 /* Headerin ikonit ja logot */
 .menu-icon {
-    background: url(/resources/images/menu-icon-gold.png) no-repeat center center;
+    background: url(/WEB15_Ryhma4_Web-projekti/resources/images/menu-icon-gold.png) no-repeat center center;
     background-size: contain;
     height: 50px;
     width: 50px;
@@ -20,7 +20,7 @@
     flex: 1;
 }
 .container-logo-header {
-    background: url(/resources/images/LOGO-Kalevala-Engrave-modified.png) no-repeat center center;
+    background: url(/WEB15_Ryhma4_Web-projekti/resources/images/LOGO-Kalevala-Engrave-modified.png) no-repeat center center;
     background-size: contain;
     height: 100px;
     width: 100px;
