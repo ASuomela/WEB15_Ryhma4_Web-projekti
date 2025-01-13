@@ -8,21 +8,21 @@ document.addEventListener('DOMContentLoaded', (event) => {
         if (query) {
             const results = [
                 // Etusivu
-                { name: 'Suosituimmat elokuvat', id: 'top-films-title', url: '/pages/01-etusivu/etusivu.html' },
-                { name: 'Ajankohtaista', id: 'news-title', url: '/pages/01-etusivu/etusivu.html' },
+                { name: 'Suosituimmat elokuvat', id: 'top-films-title', url: '/WEB15_Ryhma4_Web-projekti/pages/01-etusivu/etusivu.html' },
+                { name: 'Ajankohtaista', id: 'news-title', url: '/WEB15_Ryhma4_Web-projekti/pages/01-etusivu/etusivu.html' },
                 // Elokuvat
-                { name: 'Elokuvat ja näytökset', id: 'otsikko', url: '/pages/02-elokuvat/varaus.html' },
-                { name: 'Leffaeväät', id: 'leffaevaat', url: '/pages/02-elokuvat/varaus.html' },
+                { name: 'Elokuvat ja näytökset', id: 'otsikko', url: '/WEB15_Ryhma4_Web-projekti/pages/02-elokuvat/varaus.html' },
+                { name: 'Leffaeväät', id: 'leffaevaat', url: '/WEB15_Ryhma4_Web-projekti/pages/02-elokuvat/varaus.html' },
                 // Elokuvawiki
-                { name: 'Elokuvawiki', id: 'movie-searchbar-container', url: '/pages/03-elokuvawiki/elokuvawiki.html' },
+                { name: 'Elokuvawiki', id: 'movie-searchbar-container', url: '/WEB15_Ryhma4_Web-projekti/pages/03-elokuvawiki/elokuvawiki.html' },
                 // Elokuvakerho
-                { name: 'Elokuvakerho', id: 'kerho-container', url: '/pages/04-elokuvakerho/elokuvakerho.html' },
-                { name: 'Elokuvaraati', id: 'elokuvaraati', url: '/pages/04-elokuvakerho/elokuvakerho.html' },
+                { name: 'Elokuvakerho', id: 'kerho-container', url: '/WEB15_Ryhma4_Web-projekti/pages/04-elokuvakerho/elokuvakerho.html' },
+                { name: 'Elokuvaraati', id: 'elokuvaraati', url: '/WEB15_Ryhma4_Web-projekti/pages/04-elokuvakerho/elokuvakerho.html' },
                 // Tietoa meistä
-                { name: 'Tietoa meistä', id: 'about-content', url: '/pages/05-tietoameista/tietoameista.html' },
-                { name: 'Yhteystiedot', id: 'address', url: '/pages/05-tietoameista/tietoameista.html' },
+                { name: 'Tietoa meistä', id: 'about-content', url: '/WEB15_Ryhma4_Web-projekti/pages/05-tietoameista/tietoameista.html' },
+                { name: 'Yhteystiedot', id: 'address', url: '/WEB15_Ryhma4_Web-projekti/pages/05-tietoameista/tietoameista.html' },
                 // Rekisteröidy
-                { name: 'Rekisteröidy', id: 'register-container', url: '/pages/06-rekisteroityminen/rekisteroityminen.html' },
+                { name: 'Rekisteröidy', id: 'register-container', url: '/WEB15_Ryhma4_Web-projekti/pages/06-rekisteroityminen/rekisteroityminen.html' },
                 /* Lisää omat sivut samaan tyyliin:
                 Name: miltä hakutulos näyttää
                 id: HTML koodista ID, mihin haluat että hakutulos vie
