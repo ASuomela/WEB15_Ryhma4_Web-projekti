@@ -50,7 +50,6 @@ body {
 
 .btn {
     background-color: #ffde9c;
-    color: #14162e;
     padding: 20px 40px;
     border: none;
     cursor: pointer;
@@ -68,15 +67,16 @@ body {
     border: 2px solid #ffde9c;
 }
 
+.btn:hover a {
+    color: #ffde9c;
+}
+
 .btn a {
     text-decoration: none;
     color: #14162e;
     font-weight: bolder;
     font-size: 20px;
-}
-
-.btn:hover a {
-    color: #ffde9c;
+    transition: color 0.3s ease;
 }
 
 .cover {
