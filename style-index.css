@@ -13,7 +13,6 @@ section {
 .landing-text {
     position: fixed;
     z-index: 4;
-    background-color: rgba(255, 255, 255, 0.6);
     padding: 5px 40px 30px;
     border-radius: 10px;
     margin-top: 45%;
@@ -46,11 +45,6 @@ body {
 .logo img {
     width: 300px;
     height: auto;
-}
-
-h3 {
-    font-family: "Pirata One", system-ui;
-    font-size: 30px;
 }
 
 .btn {
