@@ -60,10 +60,13 @@ body {
     text-align: center;
     box-sizing: border-box;
     transition: background-color 0.3s ease;
+    border: 2px solid #ffde9c;
 }
 
 .btn:hover {
     background-color: #426754;
+    color: #ffde9c;
+    border: 2px solid #ffde9c;
 }
 
 .btn a {
