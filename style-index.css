@@ -65,7 +65,6 @@ body {
 
 .btn:hover {
     background-color: #426754;
-    color: #ffde9c;
     border: 2px solid #ffde9c;
 }
 
@@ -74,6 +73,10 @@ body {
     color: #14162e;
     font-weight: bolder;
     font-size: 20px;
+}
+
+.btn a:hover{
+    color: #ffde9c;
 }
 
 .cover {
