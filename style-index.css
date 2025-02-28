@@ -40,6 +40,7 @@ body {
 .logo {
     z-index: 4;
     margin-top: 5%;
+    margin-bottom: 20px;
 }
 
 .logo img {
