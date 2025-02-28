@@ -291,3 +291,7 @@ body {
         color: #000;
     }
 }
+
+audio {
+    display: none;
+}
