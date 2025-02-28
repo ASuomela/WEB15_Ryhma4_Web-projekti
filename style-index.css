@@ -75,7 +75,7 @@ body {
     font-size: 20px;
 }
 
-.btn a:hover{
+.btn:hover a {
     color: #ffde9c;
 }
 
