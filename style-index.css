@@ -15,7 +15,7 @@ section {
     z-index: 4;
     padding: 5px 40px 30px;
     border-radius: 10px;
-    margin-top: 45%;
+    margin-top: 30%;
     display: inline-block;
     opacity: 0;
     transform: translateY(500px);
@@ -102,6 +102,19 @@ body {
     width: auto;
     z-index: 1;
 }
+
+audio {
+    width: 100%;
+    min-width: 280px;
+  }
+
+  audio::-webkit-media-controls-timeline {
+    display: inline;
+  }
+
+  audio::-webkit-media-controls-current-time-display {
+    display: flex;
+  }
 
 @supports (transform: translateX(-50%)) {
 
