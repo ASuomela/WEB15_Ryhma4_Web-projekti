@@ -1,24 +1,29 @@
+/* Osio - Flexbox keskittämiseen */
 section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     text-align: center;
+    height: 100vh; /* Koko näytön korkeus */
 }
 
+/* Wrapper - Poistettu tarpeeton marginaali */
 .wrapper {
     display: flex;
     justify-content: center;
-    margin-top: 13%;
     color: black;
 }
 
+/* Landing-teksti - Suhteellinen asema ja keskitys */
 .landing-text {
-    position: fixed;
+    position: relative; /* Muutettu kiinteästä suhteelliseksi */
     z-index: 4;
     padding: 5px 40px 30px;
     border-radius: 10px;
-    margin-top: 30%;
     display: inline-block;
     opacity: 0;
-    transform: translateY(500px);
+    transform: translateY(50px); /* Pienempi siirtymä alaspäin */
     transition: opacity 2s ease-in-out, transform 2s ease-in-out;
 }
 
@@ -27,20 +32,27 @@ section {
     transform: translateY(0);
 }
 
-
+/* Himmennysanimaatio */
 @keyframes fadein {
     from { opacity: 0; }
     to { opacity: 1; }
 }
 
+/* Runko - Flexbox-asettelu koko näytölle */
 body {
     background-color: black;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Runko käyttää koko näytön korkeuden */
 }
 
+/* Logo - Keskitetty kohdistus ja marginaalit */
 .logo {
     z-index: 4;
-    margin-top: 5%;
-    margin-bottom: 20px;
+    margin: 20px 0; /* Säädetty marginaali väliin */
+    text-align: center;
 }
 
 .logo img {
@@ -48,6 +60,7 @@ body {
     height: auto;
 }
 
+/* Painikkeet*/
 .btn {
     background-color: #ffde9c;
     padding: 20px 40px;
@@ -79,6 +92,7 @@ body {
     transition: color 0.3s ease;
 }
 
+/* Tausta*/
 .cover {
     bottom: 0;
     left: 0;
@@ -103,41 +117,24 @@ body {
     z-index: 1;
 }
 
-audio {
-    width: 100%;
-    min-width: 280px;
-  }
-
-  audio::-webkit-media-controls-timeline {
-    display: inline;
-  }
-
-  audio::-webkit-media-controls-current-time-display {
-    display: flex;
-  }
-
 @supports (transform: translateX(-50%)) {
-
     .cover img, .cover video {
         left: 50%;
         top: 50%;
         transform: translateX(-50%) translateY(-50%);
     }
-
 }
 
-@media screen and (min-aspect-ratio: 16/9){/* Tähän sama aspect ratio kuin videossa */
-
+/* Kuvasuhteen säätö */
+@media screen and (min-aspect-ratio: 16/9) {
     .cover img, .cover video {
         max-width: 100vw;
         min-width: 100vw;
         width: 100vw;
     }
-
 }
 
-@media screen and (max-aspect-ratio: 16/9){/* Tähän sama aspect ratio kuin videossa */
-
+@media screen and (max-aspect-ratio: 16/9) {
     .cover img, .cover video {
         height: 100vh;
         max-height: 100vh;
