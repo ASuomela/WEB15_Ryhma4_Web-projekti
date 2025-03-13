@@ -56,7 +56,7 @@ body {
 }
 
 .logo img {
-    width: 300px;
+    width: 400px;
     height: auto;
 }
 
@@ -88,9 +88,30 @@ body {
     text-decoration: none;
     color: #14162e;
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 30px;
     transition: color 0.3s ease;
 }
+
+/* Musiikin toggle-nappi */
+
+#toggle-music-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #426754;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 10;
+}
+#toggle-music-btn:hover {
+    background-color: #ffde9c;
+    color: #14162e;
+}
+
 
 /* Tausta*/
 .cover {
