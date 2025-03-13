@@ -96,8 +96,8 @@ body {
 
 #toggle-music-btn {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 50px;
+    text-align: center;
     background-color: #426754;
     color: #fff;
     padding: 10px 20px;
