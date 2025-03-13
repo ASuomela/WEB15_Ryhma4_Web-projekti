@@ -10,7 +10,7 @@ document.getElementById('toggle-music-btn').addEventListener('click', function()
         music.muted = false; // Musiikin unmute
         this.textContent = 'Mykistä musiikki'; // Päivitä napin teksti
     } else {
-        music.muted = true; // Mute the audio
+        music.muted = true; // Musiikin mute
         this.textContent = 'Poista mykistys'; // Päivitä napin teksti
     }
 });
