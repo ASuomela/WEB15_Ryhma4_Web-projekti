@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kirjaudu sisään</title>
+    <link rel="stylesheet" href="/WEB15_Ryhma4_Web-projekti/pages/06-rekisteroityminen/rekisteroityminen.css">
+    <link rel="stylesheet" href="/WEB15_Ryhma4_Web-projekti/resources/css/styles.css">
+     <!--Google Fonts: Pirata One ja Roboto-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!--Favicon iconi selaimeen-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/WEB15_Ryhma4_Web-projekti/resources/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/WEB15_Ryhma4_Web-projekti/resources/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/WEB15_Ryhma4_Web-projekti/resources/favicon-16x16.png">
+    <link rel="manifest" href="/WEB15_Ryhma4_Web-projekti/resources/site.webmanifest">      
+
+</head>
+<body>
+
+  <header class="main-header">
+
+    <!--Side-navi-->
+            <nav class="side-nav">
+                <button class="dropbtn"><i class="menu-icon"></i></button>
+                <div class="side-nav-content">
+                    <a href="/WEB15_Ryhma4_Web-projekti/pages/01-etusivu/etusivu.html">Etusivu</a>
+                    <a href="/WEB15_Ryhma4_Web-projekti/pages/02-elokuvat/varaus.html">Elokuvat</a>
+                    <a href="/WEB15_Ryhma4_Web-projekti/pages/03-elokuvawiki/elokuvawiki.html">Elokuvawiki</a>
+                    <a href="/WEB15_Ryhma4_Web-projekti/pages/04-elokuvakerho/elokuvakerho.html">Elokuvakerho</a>
+                    <a href="/WEB15_Ryhma4_Web-projekti/pages/05-tietoameista/tietoameista.html">Tietoa meistä</a>
+                    <a href="/WEB15_Ryhma4_Web-projekti/pages/06-rekisteroityminen/rekisteroityminen.html">Rekisteröidy</a>
+                </div>
+            </nav>
+    
+    <!--Logo ja otsikko-->
+                <a href="/WEB15_Ryhma4_Web-projekti/index.html">
+                    <div class="container-logo-header">
+                        <i class="logo-header"></i>
+                    </div>
+                </a>
+            
+    <!--Top-navi-->
+    <nav class="top-nav">
+        <div class="top-nav-left">
+            <a href="/WEB15_Ryhma4_Web-projekti/pages/01-etusivu/etusivu.html" class="nav-link">Etusivu</a>
+            <a href="/WEB15_Ryhma4_Web-projekti/pages/02-elokuvat/varaus.html" class="nav-link">Elokuvat</a>
+            <a href="/WEB15_Ryhma4_Web-projekti/pages/03-elokuvawiki/elokuvawiki.html" class="nav-link">Elokuvawiki</a>
+            <a href="/WEB15_Ryhma4_Web-projekti/pages/04-elokuvakerho/elokuvakerho.html" class="nav-link">Elokuvakerho</a>
+            <a href="/WEB15_Ryhma4_Web-projekti/pages/05-tietoameista/tietoameista.html" class="nav-link">Tietoa meistä</a>
+        </div>
+        <div class="top-nav-right">
+            <input class="nav-searchbar" type="text" id="nav-searchBar" placeholder="Haku sivulta.."><ul id="resultsList"></ul>
+            <a href="/WEB15_Ryhma4_Web-projekti/pages/06-rekisteroityminen/rekisteroityminen.html" class="nav-link">Rekisteröidy</a>
+        </div>
+    </nav>
+</header>
+
+
+    <main>
+
+      <div class="register-container" id="register-container">
+        
+            <form action="#">
+              <h1>Kirjaudu sisään</h1>
+              <p>Ole hyvä ja syötä alla olevat tiedot.</p>
+
+              <div class="user-details">
+               
+                
+                <div class="input-box">
+                    <span class="details">Sähköposti</span>
+                    <input type="text" placeholder="Anna sähköpostiosoite" required>
+                </div>
+               
+                <div class="input-box">
+                    <span class="details">Salasana</span>
+                    <input type="text" placeholder="Syötä salasana" required>
+                </div>
+               
+               </div> 
+               <div class="button">
+                <input type="submit" value="Sisään">
+               </div>
+            </form>
+        </div>
+            
+          </form>
+    </main>
+
+
+
+
+      <!--Footer-->
+    <footer>
+        <section class="footer-content-section">
+            <div class="container">
+                <div class="footer-content">
+                    <!-- Yhteystiedot -->
+                    <div class="footer-contact">
+                        <h3>Yhteystiedot:</h3>
+                        <p>Käyntiosoite:<br><br> Taitotalo, Valimotie 8<br> 00380 Helsinki</p>
+                        <p>info@4lphadev.fi<br> Puh. 045 xxxxxxx</p>
+                        <p>Teatteri ja baari avoinna:<br> Ma-to 16-22<br> Pe 16-22<br> La 11-24<br> Su 12-21</p>
+                        <p>Teatteripäällikkö Henkka Hellsten<br> Arkisin klo 10-16: 045-xxxxxx</p>
+                    </div>
+                    <!-- Logo -->
+                    <div class="footer-logo">
+                        <img src="/WEB15_Ryhma4_Web-projekti/resources/images/LOGO-Kalevala-Engrave-modified.png" alt="Kalevala Kino logo" width="75%" height="75%">
+                    </div>
+                    <!-- Uutiskirje ja some -->
+                    <div class="footer-news-social">
+                        <h3>Tilaa uutiskirje</h3>
+                        <input type="email" placeholder="Syötä sähköpostiosoite">
+                        <button>Lähetä</button>
+
+                        <h3>Löydät meidät somesta</h3>
+                        <div class="social-icons">
+                            <a href="#"><img src="/WEB15_Ryhma4_Web-projekti/resources/images/instagram.png" alt="Instagram"></a>
+                            <a href="#"><img src="/WEB15_Ryhma4_Web-projekti/resources/images/facebook.png" alt="Facebook"></a>
+                            <a href="#"><img src="/WEB15_Ryhma4_Web-projekti/resources/images/linkedin.png" alt="LinkedIn"></a>
+                            <a href="#"><img src="/WEB15_Ryhma4_Web-projekti/resources/images/youtube.png" alt="YouTube"></a>
+                            <a href="#"><img src="/WEB15_Ryhma4_Web-projekti/resources/images/tiktok.png" alt="TikTok"></a>
+                            <a href="#"><img src="/WEB15_Ryhma4_Web-projekti/resources/images/pinterest.png" alt="Pinterest"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2022 Kalevala Kino. All Rights Reserved.</p>
+                <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+                </div>
+        </section>
+    </footer>
+
+    <!--JavaScript-->
+    <script src="/WEB15_Ryhma4_Web-projekti/resources/javascript/javascript-shared.js" defer></script>
+    
+    
+</body>
+</html>
