@@ -18,6 +18,14 @@ h1 {
 
 /* Rekisteröitymislomake */
 
+.container-signin a:visited {
+  color: #ffde9c;
+}
+
+.container-signin a {
+  color: #ffde9c;
+}
+
 .register-container {
   display: flex;
   flex-wrap: wrap;
